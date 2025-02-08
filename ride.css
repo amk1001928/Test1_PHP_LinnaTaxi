@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    padding-top: 86px; /* Account for fixed header */
+}
+
+/* Navigation Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+/* details Section */
+.details {
+    min-height: 100vh;
+    background-image: url('Images/RideBack1.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 0.5rem;
+    position: relative;
+}
+
+.calling {
+    padding: 1rem;
+    border-radius: 10px;
+    
+}
+
+.calling h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.calling p, .calling ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.downloads img {
+    width: 160px;
+    height: 44px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.downloads img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Benefits Section */
+.benefits-section {
+    min-height: 100vh;
+    background-image: url('Images/RideBack2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 0;
+}
+
+.benefits-content {
+    font-family:'Jost';
+    font-size: 1.2rem;
+    margin-top: 120px;
+
+}
+.benefits-content p {
+    font-family:'Jost';
+    font-size: 1.3rem;
+
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits-list li {
+    font-family: 'Jost';
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.benefits-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: black;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .details {
+        padding: 2rem 0;
+    }
+    
+    .calling {
+        margin: 2rem;
+    }
+    
+    .downloads {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .downloads img {
+        width: 160px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .calling h1 {
+        font-size: 2rem;
+    }
+    
+    .calling p, .calling ul {
+        font-size: 1.1rem;
+    }
+    
+    .benefits-content {
+        margin: 1rem;
+    }
+    
+    .benefits-list li {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+@media (max-width: 575.98px) {
+    .downloads img {
+        width: 140px;
+        height: 42px;
+    }
+}
+}
+
