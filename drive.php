@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <?php 
+    // Include the header file
+    $title ="Drive - LinnaTaxi";
+    include 'header.php';
+    ?>
+
+    <link rel="stylesheet" href="drive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+
+<div class="top-left"></div>
+
+<div class="top-right">
+    <h1 class="signup">Signup to Drive LinnaTaxi</h1>
+    <div class="container">
+        <form action="#" class="form">
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Name" required>
+                <input type="tel" placeholder="Mobile" required>
+                <input type="text" placeholder="Vehicle Type" required>
+                <input type="text" placeholder="Vehicle Make" required>
+                <input type="text" placeholder="Vehicle Model" required>
+                <select required>
+                    <option value="">Full time or Part time</option>
+                    <option value="full-time">Full time</option>
+                    <option value="part-time">Part time</option>
+                </select>
+                <select required>
+                    <option value="">Working District</option>
+                    <option value="hämeenlinna">Hämeenlinna</option>
+                    
+                </select>
+                <button type="submit" class="btn" onclick="openPopup(event)">Register</button>
+                <div class="popup" id="popup"> 
+                    <img src="Images/thic.png" alt="tick">
+                    <h3>Thank you!</h3>
+                    <p class="tickbox"> Your details has been successfully submitted.</p>
+                    <button type="button" onclick="closePopup()">OK</button>                   
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+</div>
+<div class="bottom-left">
+    
+    <p class="download">Download the App</p>
+<div class="appdown">
+    <img src="Images/driveapp.png" alt="dwonload app">
+</div>
+    <div class="appstore">
+        <a href="https://play.google.com/store/games?hl=en&pli=1"><img src="Images/GooglePlay.png" alt="Google Play" ></a>
+        <a href="https://www.apple.com/app-store/"><img src="Images/AppStore.png" alt="App Store"></a>
+        <a href="https://consumer.huawei.com/fi/mobileservices/appgallery/"> <img src="Images/AppGallery.png" alt="App Gallery"></a>
+       <a href="https://apps.microsoft.com/home?hl=en-US&gl=US"><img src="Images/WinStore.png" alt="Windows Store"></a>
+        
+    </div>
+</div>
+<div class="bottom-right">
+    <h2>Opportunities are Endless with LinnaTaxi.</h2>
+        <p class="last">
+          If you own a Car, SUV, Van, Cab, Mini Van, We got rides for you! Join
+          the largest network of drivers in the country & make driving fun while
+          you earn over 5,000 Euros per month </p>
+                <ul>
+          <li>Enjoy a Monthly Income of 5,000
+            Euros & upwards</li> 
+            <li>  Get a Life Insurance Cover of 100,000 Euros(Inclusive
+                critical illness)</li> 
+                <li>Earn weekly and daily incentives </li>
+                <li>Pay Lesser
+                    Commission while receiving Higher Earnings</li> 
+                    <li>Immediate Earnings
+                        regardless of payment methods</li>
+                    </ul>
+</div>
+    <script>
+       function closePopup() {
+    let popup = document.getElementById("popup");
+    popup.classList.remove("open-popup");
+}
+
+function openPopup(event) {
+    event.preventDefault(); // Prevent form submission
+
+    let inputs = document.querySelectorAll('.form input[required], .form select[required]');
+    let allFilled = true;
+
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            allFilled = false;
+            input.style.borderColor = "red"; // Highlight empty fields
+        } else {
+            input.style.borderColor = ""; // Reset border for filled fields
+        }
+    });
+
+    if (allFilled) {
+        let popup = document.getElementById("popup");
+        popup.classList.add("open-popup");
+    }
+}
+
+      
+       
+    </script> 
+        <?php 
+// Include the header file
+    include 'footer.php';
+    ?>
+</body>
+</html>

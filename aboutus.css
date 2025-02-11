@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    padding-top: 80px; 
+    padding-top: 90px; 
 }
 
 
@@ -35,7 +35,7 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 130px;
     height: auto;
-    cursor: pointer; /* Pointer cursor on hover */
+    cursor: pointer;
 }
 
 .HR_IMG
@@ -106,33 +106,6 @@ background-color: #f6d028;
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
-    .nav {
-        margin-top: 1rem;
-    }
-    
-    .menu-button {
-        padding: 0.6rem 1rem;
-        font-size: 1rem;
-    }
-    
-    .logo img {
-        max-width: 120px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        padding: 0.5rem 0;
-    }
-    
-    .nav .d-flex {
-        flex-wrap: wrap;
-        justify-content: center !important;
-    }
-    
-    .menu-button {
-        margin: 0.5rem;
-    }
     
     .first-frame,
     .second-frame {
@@ -144,16 +117,6 @@ background-color: #f6d028;
     body {
         padding-top: 120px;
     }
-    
-    .logo {
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    
-    .menu-button {
-        width: 100%;
-        text-align: center;
-        margin: 0.25rem 0;
-    }
+
 }
 
