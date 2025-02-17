@@ -145,7 +145,7 @@ include 'db_drive_connect.php'; // Include database connection
              allFilled = false;
              input.style.borderColor = "red"; // Highlight empty fields
          } else {
-             input.style.borderColor = ""; // Reset border for filled fields
+             input.style.borderColor = "";   // Reset border for filled fields
          }
      });
  
