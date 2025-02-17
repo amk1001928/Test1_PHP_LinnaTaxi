@@ -34,7 +34,7 @@ include 'db_drive_connect.php'; // Include database connection
           <div class="col-lg-6 form-column">
             <div class="form-wrapper">
               <h1 class="signup">Signup to Drive LinnaTaxi</h1>
-              <form action="#" class="form" method="post" >
+              <form action="data_drive.php" class="form" method="post" >
               <div class="input-box">
         <input type="text" class="form-control" name="firstName" placeholder="First name" required>
         <input type="text" class="form-control" name="lastName" placeholder="Last name" required>
