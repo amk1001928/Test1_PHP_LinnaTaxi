@@ -94,7 +94,6 @@ input{
     }
     select:([value=""]) {
       color:  #707070;
-      
     }
 
 .btn{ 
