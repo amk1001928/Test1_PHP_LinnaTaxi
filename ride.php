@@ -97,6 +97,38 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function closePopup() {
+      let popup = document.getElementById("popup");
+      popup.classList.remove("open-popup");
+      let form = document.querySelector(".form");
+      form.reset();
+      }
+
+      function openPopup(event) {
+      event.preventDefault(); // Prevent form submission
+
+      let inputs = document.querySelectorAll('.form input[required], .form select[required]');
+      let allFilled = true;
+
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+           allFilled = false;
+           input.style.borderColor = "red"; // Highlight empty fields
+        } else {
+           input.style.borderColor = ""; // Reset border for filled fields
+        }
+      });
+
+      if (allFilled) {
+        let popup = document.getElementById("popup");
+        popup.classList.add("open-popup");
+      }
+    }
+    setTimeout(() => {
+    form.reset(); // Reset form fields
+    }, 500); // Small delay to avoid instant reset
+  </script> 
     <?php 
 // Include the header file
     include 'footer.php';
