@@ -37,9 +37,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="driver-Performance" name="driver-Performance"  alt="driver-Performance" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="driver-Performance" name="driver-Performance" alt="driver-Performance" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="Driver-Performance" name="driver-Performance"  alt="driver-Performance" class="sad">
+                                    <input type="radio"  id="driver_Performance" name="driver_Performance"  alt="driver_Performance" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="driver_Performance" name="driver_Performance" alt="driver_Performance" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="Driver_Performance" name="driver_Performance"  alt="driver_Performance" class="sad">
                                     <br>
                                     <label for="vehicle-condition">How would you rate the cleanliness and condition of the vehicle?</label>
                                     <br>
@@ -47,9 +47,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="vehicle-condition" name="vehicle-condition" alt="vehicle-condition"  class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="vehicle-condition" name="vehicle-condition"  alt="vehicle-condition"class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="vehicle-condition" name="vehicle-condition"alt="vehicle-condition" class="sad">
+                                    <input type="radio"  id="vehicle_condition" name="vehicle_condition" alt="vehicle_condition"  class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="vehicle_condition" name="vehicle_condition"  alt="vehicle_condition"class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="vehicle_condition" name="vehicle_condition"alt="vehicle_condition" class="sad">
                                     <br>
                                     <label for="timeliness">How would you rate the punctuality of your driver?</label>
                                     <br>
@@ -57,9 +57,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="timeliness" name="timeliness"  alt="timeliness" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="timeliness" name="timeliness"  alt="timeliness" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="timeliness" name="timeliness" alt="timeliness" class="sad">
+                                    <input type="radio"  id="timeliness" name="timeliness"  alt="timeliness" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="timeliness" name="timeliness"  alt="timeliness" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="timeliness" name="timeliness" alt="timeliness" class="sad">
                                     <br>
                                     <label for="booking-process">How easy was it to book a ride using the Pick Me app?</label>
                                     <br>
@@ -67,9 +67,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="booking-process" name="booking-process"  alt="booking-process" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="booking-process" name="booking-process" alt="booking-process" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="booking-process" name="booking-process"  alt="booking-process" class="sad">
+                                    <input type="radio"  id="booking_process" name="booking_process"  alt="booking_process" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="booking_process" name="booking_process" alt="booking_process" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="booking_process" name="booking_process"  alt="booking_process" class="sad">
                                     <br>
                                     <label for="overall-satisfaction">How would you rate your overall experience with our service?</label>
                                     <br>
@@ -77,9 +77,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="overall-satisfaction" name="overall-satisfaction"  alt="overall-satisfaction" class="smile" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="overall-satisfaction" name="overall-satisfaction"  alt="overall-satisfaction"class="medium" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="overall-satisfaction" name="overall-satisfaction" alt="overall-satisfaction" class="sad">
+                                    <input type="radio"  id="overall_satisfaction" name="overall_satisfaction"  alt="overall_satisfaction" class="smile" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="overall_satisfaction" name="overall_satisfaction"  alt="overall_satisfaction"class="medium" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  id="overall_satisfaction" name="overall_satisfaction" alt="overall_satisfaction" class="sad">
                                     <br><br>
 
                                     <!--<input type="submit" value="Submit Feedback">-->
@@ -138,6 +138,6 @@
                     form.reset(); // Reset form fields
                 }, 500); // Small delay to avoid instant reset
             
-         </script>
+        </script>
 </body>
 </html>
