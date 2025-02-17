@@ -1,3 +1,8 @@
+<?php
+include 'db_drive_connect.php'; // Include database connection
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,29 +34,36 @@
           <div class="col-lg-6 form-column">
             <div class="form-wrapper">
               <h1 class="signup">Signup to Drive LinnaTaxi</h1>
-              <form action="#" class="form">
-                <div class="input-box">
-                  <input type="text" class="form-control" placeholder="First name" required>
-                  <input type="text" class="form-control" placeholder="Last name" required>
-                  <input type="email" class="form-control" placeholder="Email" required>
-                  <input type="text" class="form-control" placeholder="Mobile" required>
-                  <input type="text" class="form-control" placeholder="Vehicle Type" required>
-                  <input type="text" class="form-control" placeholder="Vehicle Make" required>
-                  <input type="text" class="form-control" placeholder="Vehicle Model" required>
-                  <select class="form-select" required>
-                    <option value="">Availability</option>
-                    <option value="full-time">Full time</option>
-                    <option value="part-time">Part time</option>
-                  </select>
-                  <select class="form-select" required>
-                    <option value="">Working District</option>
-                    <option value="hämeenlinna">Hämeenlinna</option>
-                  </select>
-                  <div class="d-grid gap-2 col-3 mx-auto">
-                    <button class="btn btn-primary" type="button" onclick="openPopup(event)">Register</button>
-                  </div>
-                </div>
-              </form>
+              <form action="data_drive.php" class="form" method="post" id="driverForm">
+    <div class="input-box">
+        <input type="text" class="form-control" name="firstName" placeholder="First name" required>
+        <input type="text" class="form-control" name="lastName" placeholder="Last name" required>
+        <input type="email" class="form-control" name="email" placeholder="Email" required>
+        <input type="text" class="form-control" name="mobile" placeholder="Mobile" required>
+        <input type="text" class="form-control" name="vehicleType" placeholder="Vehicle Type" required>
+        <input type="text" class="form-control" name="vehicleMake" placeholder="Vehicle Make" required>
+        <input type="text" class="form-control" name="vehicleModel" placeholder="Vehicle Model" required>
+        <select class="form-select" name="availability" required>
+            <option value="">Availability</option>
+            <option value="full-time">Full time</option>
+            <option value="part-time">Part time</option>
+        </select>
+        <select class="form-select" name="workingDistrict" required>
+            <option value="">Working District</option>
+            <option value="hämeenlinna">Hämeenlinna</option>
+        </select>
+        
+        <div class="d-grid gap-2 col-3 mx-auto">
+            <button class="btn btn-primary" type="submit">Register</button>
+        </div>
+    </div>
+</form>
+<div class="popup" id="popup"> 
+    <img src="Images/thic.png" alt="tick">
+    <h3>Thank you!</h3>
+    <p class="tickbox">Your details has been successfully submitted.</p>
+    <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
+</div>
             </div>
           </div>
         </div>
@@ -117,32 +129,34 @@
     <?php include 'footer.php'; ?>
 
     <script>
-      function closePopup() {
-        let popup = document.getElementById("popup");
-        popup.classList.remove("open-popup");
-        let form = document.querySelector(".form");
-        form.reset();
-      }
+function closePopup() {
+    let popup = document.getElementById("popup");
+    popup.classList.remove("open-popup");
+}
 
-      function openPopup(event) {
-        event.preventDefault();
-        let inputs = document.querySelectorAll('.form input[required], .form select[required]');
-        let allFilled = true;
+document.getElementById('driverForm').addEventListener('submit', function(event) {
+    let inputs = document.querySelectorAll('.form input[required], .form select[required]');
+    let allFilled = true;
 
-        inputs.forEach(input => {
-          if (!input.value.trim()) {
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
             allFilled = false;
             input.style.borderColor = "red";
-          } else {
+        } else {
             input.style.borderColor = "";
-          }
-        });
-
-        if (allFilled) {
-          let popup = document.getElementById("popup");
-          popup.classList.add("open-popup");
         }
-      }
-    </script>
+    });
+
+    if (!allFilled) {
+        event.preventDefault();
+    } else {
+        // Show popup after successful submission
+        setTimeout(() => {
+            let popup = document.getElementById("popup");
+            popup.classList.add("open-popup");
+        }, 500);
+    }
+});
+</script>
   </body>
 </html>

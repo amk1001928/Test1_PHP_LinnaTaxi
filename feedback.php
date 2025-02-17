@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinnaTaxi - Home</title>
+    <title>Feedback - LinnaTaxi</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="AboutUs.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="aboutus.css">
 
 
     <!-- Google Fonts -->
@@ -21,50 +20,26 @@
 </head>
 
 <body>
-        <header class="header fixed-top">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="logo">
-                    <img src="Images/Logo.png" alt="LinnaTaxi Logo" class="img-fluid" />
-                    </div>
-                        <!-- Hamburger Button -->
-                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="index.html" class="menu-button">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="ride.html" class="menu-button">Ride</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="drive.html" class="menu-button">Drive</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="AboutUs.html" class="menu-button">About Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    
+<!-- Include Header -->
+<?php include 'header.php'; ?>
+
             <div class="first-frame">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-7">
                             <h2>How is your Ride......</h2>
                             <br>
-                                <form>
-                                    <label for="Driver-Performance">How would you rate the professionalism and behavior of your driver?</label>
+                                <form method="POST" action="datafeedback.php">
+                                    <label for="driver-Performance">How would you rate the professionalism and behavior of your driver?</label>
                                     <br>
                                     <img src="Images/smile.png.jpg" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="Driver-Performance" name="Driver-Performance"  alt="Driver-Performance" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="Driver-Performance" name="Driver-Performance" alt="Driver-Performance" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="Driver-Performance" name="Driver-Performance"  alt="Driver-Performance" class="sad">
+                                    <input type="radio" value="good" id="driver_Performance" name="driver_Performance"  alt="driver_Performance" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value="average" id="driver_Performance" name="driver_Performance" alt="driver_Performance" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value= "bad"id="Driver_Performance" name="driver_Performance"  alt="driver_Performance" class="sad">
                                     <br>
                                     <label for="vehicle-condition">How would you rate the cleanliness and condition of the vehicle?</label>
                                     <br>
@@ -72,9 +47,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="vehicle-condition" name="vehicle-condition" alt="vehicle-condition"  class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="vehicle-condition" name="vehicle-condition"  alt="vehicle-condition"class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="vehicle-condition" name="vehicle-condition"alt="vehicle-condition" class="sad">
+                                    <input type="radio" value="good"  id="vehicle_condition" name="vehicle_condition" alt="vehicle_condition"  class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value="average"  id="vehicle_condition" name="vehicle_condition"  alt="vehicle_condition"class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value= "bad" id="vehicle_condition" name="vehicle_condition"alt="vehicle_condition" class="sad">
                                     <br>
                                     <label for="timeliness">How would you rate the punctuality of your driver?</label>
                                     <br>
@@ -82,9 +57,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="timeliness" name="timeliness"  alt="timeliness" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="timeliness" name="timeliness"  alt="timeliness" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="timeliness" name="timeliness" alt="timeliness" class="sad">
+                                    <input type="radio" value="good" id="timeliness" name="timeliness"  alt="timeliness" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value="average" id="timeliness" name="timeliness"  alt="timeliness" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value= "bad"  id="timeliness" name="timeliness" alt="timeliness" class="sad">
                                     <br>
                                     <label for="booking-process">How easy was it to book a ride using the Pick Me app?</label>
                                     <br>
@@ -92,9 +67,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="booking-process" name="booking-process"  alt="booking-process" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="booking-process" name="booking-process" alt="booking-process" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="booking-process" name="booking-process"  alt="booking-process" class="sad">
+                                    <input type="radio" value="good"  id="booking_process" name="booking_process"  alt="booking_process" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value="average" id="booking_process" name="booking_process" alt="booking_process" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value= "bad"  id="booking_process" name="booking_process"  alt="booking_process" class="sad">
                                     <br>
                                     <label for="overall-satisfaction">How would you rate your overall experience with our service?</label>
                                     <br>
@@ -102,9 +77,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="overall-satisfaction" name="overall-satisfaction"  alt="overall-satisfaction" class="smile" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="overall-satisfaction" name="overall-satisfaction"  alt="overall-satisfaction"class="medium" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="overall-satisfaction" name="overall-satisfaction" alt="overall-satisfaction" class="sad">
+                                    <input type="radio"  value="good" id="overall_satisfaction" name="overall_satisfaction"  alt="overall_satisfaction" class="smile" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value="average" id="overall_satisfaction" name="overall_satisfaction"  alt="overall_satisfaction"class="medium" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value= "bad"  id="overall_satisfaction" name="overall_satisfaction" alt="overall_satisfaction" class="sad">
                                     <br><br>
 
                                     <!--<input type="submit" value="Submit Feedback">-->
@@ -163,6 +138,6 @@
                     form.reset(); // Reset form fields
                 }, 500); // Small delay to avoid instant reset
             
-         </script>
+        </script>
 </body>
 </html>
