@@ -1,252 +1,321 @@
-html,body {
-    height: 200vh;
-      margin: 0;
-      padding: 0;
-    }
-    
-    div {
-      width: 50%;
-      height: 50%;
-      float: left;
-    }
-    
-    .top-left {
-      background-image: url(Images/driver.jpeg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      filter: brightness(50%); 
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-self: center;
-      
-  
-    }
-    .container {
-      height: auto;
-      margin-left: 180px;
-      margin-right: auto;
-      width: 50%;
-      max-width: 1200px;
-      background-color: rgb(255, 255, 255);
-      background-position: center;
-      background-size: cover;
-  }
-  
-    .top-right {
-      background: #ffdd49;
-          padding: 0;
-          margin: 0px;
-          font-family: sans-serif ;
-  
-    }
-  
-  
-    .signup{
-      font-size: 40px;
-      text-align: center;
-      margin-top: 110px;
-    }
-    input:focus,
-  input:not(:placeholder-shown) {
-    color: black;
-  }
-  
-  
-    input{
-      position: relative;
-      height: auto;
-      width: 180%;
-      font-size: 1rem;
-      color: #707070;
-      margin-top: 5px;
-      outline: none;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      padding: 10px 15px;
-      background:white ;
-      
-      box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
-    }
-    select {
-      position: relative;
-      height: auto;
-      width: 200%;
-      font-size: 1rem;
-      color:  #707070;
-      margin-top: 5px;
-      outline: none;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      padding: 10px 15px;
-      background:white ;
-      
-      box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
-    }
-  
-    select:not([value=""]) {
-      color: #000000; 
-      
-    }
-    select:([value=""]) {
-      color:  #707070;
-      
-    }
-    
-   
-    .btn{ 
-      height: auto;
-      text-align: center;
-      margin-top: 15px;
-      margin-left: 0px;
-      padding: 10px 20px;
-      font-size: 18px;
-      font-weight: bold;
-      width: 200%;
-      background-color: #f3a006;
-      font-size: 1rem;
-      color: #e2dfdf;
-      outline: none;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
-  
-    }
-    .popup{
-      width:400px;
-      background: #fff;
-      border-radius: 6px;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%,-50%) scale(0.1);
-      text-align: center;
-      padding: 0px 30px 30px;
-      color: #333;
-      visibility: hidden;
-      transition:0.4s, top 0.4s;
-
-    }
-
-.open-popup{
-  visibility: visible;
-  top: 50%;
-  transform: translate(-50%,-50%) scale(1);
+/* Base styles */
+body {
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-    .popup img{
-      width: 100px;
-      margin-top: -50px;
-      border-radius: 50px;
-      box-shadow: 0 2px 5px rgba(0, 0,0, 0.2);
+/* Frame styles */
+.first-frame,
+.second-frame {
+  min-height: 100vh;
+  background-color: #FDD31A;
+  width: 100%;
+}
 
-    }
-    .popup h3{
-      font-size: 38px;
-      font-weight: 500;
-      margin: 30px 0 10px;#
-    }
-    .popup button{
-      width: 100%;
-      margin-top: 50px;
-      padding: 10px 0;
-      background: #ffdd49;
-      color: #fff;
-      border: 0;
-      outline: none;
-      font-size: 18px;
-      border-radius: 4px;
-      cursor: pointer;
-      box-shadow: 0 5px 5px rgba(0, 0,0, 0.2);
+/* Driver section styles */
+.driver-column {
+  margin-top: 90px;
+  height: 100vh;
+  padding: 0;
+}
 
-    }
+.driver {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-    .bottom-left {
-      background: #ffdd49;
-    }
-    
-    .bottom-right {
-      background-color: #0f0c03;
-      color: white;
-      justify-self: center;
-      
-    }
-    h2{
-  
-      align-items: left;
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-top: 50px;
-      font-size: 40px;
-  
-    }
-    
-    p.last{
-        align-items: center;
-        padding-top: 30px;
-        padding-left: 100px;
-        padding-right: 100px;
-        font-size: 20px;
-    }
-    
-    li{
-        font-size: 18px;
-        align-items: left;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 100px;
-    }
-    ul{
-        padding-left:  100px;
-    }
-  
-  
-    .bottom-left {
-      background: #ffdd49;
-      align-items: right;
-      justify-content: center;
-  }
-  
-  .download {
-      font-size: 45px;
-      align-items: center;
-      margin-left: 150px;
-  }
-  
-  .appdown {
-      text-align: left;
-      margin-bottom: 30px;
-  }
-  
-  .appdown img {
-      width: 180%;
-      max-width: 800px;
-      margin-top: -150px;
-      margin-right: -10px;
-      margin-left: -40px;
-  }
-  
-  .appstore {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
-  }
-  
-  .appstore img {
-      width: 160px;
-      height: auto;
-      border-radius: 5px;
-      margin-left: 80px;
-  }
-  .appstore img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); }
+.driver img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-  
-  @media screen and (max-width: 1040) {
-    .container {
-        width: 80%;
-    }}
+/* Form section styles */
+.form-column {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #FDD31A;
+  padding: 40px;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.signup {
+  margin-top: 90px;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.form {
+  margin-left: 55px;
+  width: 80%;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-control,
+.form-select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Download section styles */
+.download-section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+  gap: 30px;
+}
+
+.app-image-container {
+  flex: 1;
+  max-width: 60%;
+}
+
+.download-app {
+  margin-right: 0px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.download-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.download-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 20px;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+
+.download-buttons img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+
+}
+
+.download-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* Description section styles */
+.description {
+  background-color: #333;
+  padding: 140px;
+}
+
+.description h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f5f1f1;
+  margin-bottom: 30px;
+}
+
+.description .last {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.description li {
+  color: #ddd;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 2;
+}
+
+.description li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #e8e409;
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 1000;
+  max-width: 90%;
+  width: 400px;
+}
+
+.popup.open-popup {
+  display: block;
+}
+
+.popup img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.popup h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .download-section {
+    padding: 30px;
+  }
+
+  .download-buttons img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .driver-column {
+    height: 50vh;
+  }
+
+  .form-column {
+    height: auto;
+    min-height: 50vh;
+    padding: 20px;
+  }
+
+  .signup {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .download-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .app-image-container {
+    max-width: 100%;
+  }
+
+  .download-text {
+    font-size: 1.75rem;
+  }
+
+  .download-buttons img {
+    width: 150px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .description h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup {
+    font-size: 1.75rem;
+  }
+
+  .download-buttons img {
+    width: 130px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .description ul {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-column {
+    padding: 15px;
+  }
+
+  .signup {
+    font-size: 1.5rem;
+  }
+
+  .form-control,
+  .form-select {
+    padding: 10px;
+  }
+
+  .download-section {
+    padding: 15px;
+  }
+
+  .download-text {
+    font-size: 1.5rem;
+  }
+
+  .download-buttons img {
+    width: 120px;
+  }
+
+  .description h2 {
+    font-size: 1.5rem;
+  }
+
+  .description .last {
+    font-size: 1rem;
+  }
+
+  .popup {
+    padding: 20px;
+  }
+}

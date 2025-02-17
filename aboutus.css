@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    padding-top: 90px; 
+    padding-top: 80px; 
 }
 
 
@@ -35,7 +35,7 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 130px;
     height: auto;
-    cursor: pointer;
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
 .HR_IMG
@@ -105,18 +105,20 @@ background-color: #f6d028;
 
 
 /* Responsive Adjustments */
-@media (max-width: 992px) {
-    
+
+@media (max-width: 991.98px) {
+
     .first-frame,
     .second-frame {
         padding: 1rem 0;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
     body {
         padding-top: 120px;
     }
+    
 
 }
 

@@ -1,132 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <?php 
-    // Include the header file
-    $title ="Drive - LinnaTaxi";
-    include 'header.php';
-    ?>
-
-    <link rel="stylesheet" href="drive.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="drive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <?php include 'header.php'; ?>
 
-</head>
-<body>
+    <section class="first-frame">
+      <div class="container-fluid px-0">
+        <div class="row g-0">
+          <!-- Driver Image Column (Left) -->
+          <div class="col-lg-6 driver-column">
+            <div class="driver">
+              <img src="Images/driver.jpeg" alt="driver">
+            </div>
+          </div>
 
-<div class="top-left"></div>
-
-<div class="top-right">
-    <h1 class="signup">Signup to Drive LinnaTaxi</h1>
-    <div class="container">
-        <form action="#" class="form">
-            <div class="input-box">
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Mobile" required>
-                <input type="text" placeholder="Vehicle Type" required>
-                <input type="text" placeholder="Vehicle Make" required>
-                <input type="text" placeholder="Vehicle Model" required>
-                <select required>
-                    <option value="">Full time or Part time</option>
+          <!-- Form Column (Right) -->
+          <div class="col-lg-6 form-column">
+            <div class="form-wrapper">
+              <h1 class="signup">Signup to Drive LinnaTaxi</h1>
+              <form action="#" class="form">
+                <div class="input-box">
+                  <input type="text" class="form-control" placeholder="First name" required>
+                  <input type="text" class="form-control" placeholder="Last name" required>
+                  <input type="email" class="form-control" placeholder="Email" required>
+                  <input type="text" class="form-control" placeholder="Mobile" required>
+                  <input type="text" class="form-control" placeholder="Vehicle Type" required>
+                  <input type="text" class="form-control" placeholder="Vehicle Make" required>
+                  <input type="text" class="form-control" placeholder="Vehicle Model" required>
+                  <select class="form-select" required>
+                    <option value="">Availability</option>
                     <option value="full-time">Full time</option>
                     <option value="part-time">Part time</option>
-                </select>
-                <select required>
+                  </select>
+                  <select class="form-select" required>
                     <option value="">Working District</option>
                     <option value="hämeenlinna">Hämeenlinna</option>
-                    
-                </select>
-                <button type="submit" class="btn" onclick="openPopup(event)">Register</button>
-                <div class="popup" id="popup"> 
-                    <img src="Images/thic.png" alt="tick">
-                    <h3>Thank you!</h3>
-                    <p class="tickbox"> Your details has been successfully submitted.</p>
-                    <button type="button" onclick="closePopup()">OK</button>                   
+                  </select>
+                  <div class="d-grid gap-2 col-3 mx-auto">
+                    <button class="btn btn-primary" type="button" onclick="openPopup(event)">Register</button>
+                  </div>
                 </div>
-
-
+              </form>
             </div>
-        </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="second-frame">
+      <div class="container-fluid px-0">
+        <div class="row g-0">
+          <div class="col-lg-6">
+            <div class="download-section">
+              <div class="app-image-container">
+                <img src="Images/driveapp.png" alt="download app" class="download-app">
+              </div>
+              <div class="download-content">
+                <p class="download-text">Download Our App Now!</p>
+                <div class="download-buttons">
+                  <a href="https://play.google.com/store">
+                    <img src="Images/GooglePlay.png" alt="Google Play">
+                  </a>
+                  <a href="https://www.apple.com/app-store/">
+                    <img src="Images/AppStore.png" alt="App Store">
+                  </a>
+                  <a href="https://consumer.huawei.com/fi/mobileservices/appgallery/">
+                    <img src="Images/AppGallery.png" alt="App Gallery">
+                  </a>
+                  <a href="https://apps.microsoft.com/home">
+                    <img src="Images/WinStore.png" alt="Windows Store">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="description">
+              <h2>Opportunities are Endless with LinnaTaxi</h2>
+              <p class="last">
+                If you own a Car, SUV, Van, Cab, Mini Van, We got rides for you! Join
+                the largest network of drivers in the country & make driving fun while
+                you earn over 5,000 Euros per month.<br>
+              </p>
+              <ul>
+                <li>Enjoy a Monthly Income of 5,000 Euros & upwards</li>
+                <li>Get a Life Insurance Cover of 100,000 Euros (Inclusive critical illness)</li>
+                <li>Earn weekly and daily incentives</li>
+                <li>Pay Lesser Commission while receiving Higher Earnings</li>
+                <li>Immediate Earnings regardless of payment methods</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="popup" id="popup">
+      <img src="Images/thic.png" alt="tick">
+      <h3>Thank you!</h3>
+      <p class="tickbox">Your details has been successfully submitted.</p>
+      <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
     </div>
-</div>
-<div class="bottom-left">
-    
-    <p class="download">Download the App</p>
-<div class="appdown">
-    <img src="Images/driveapp.png" alt="dwonload app">
-</div>
-    <div class="appstore">
-        <a href="https://play.google.com/store/games?hl=en&pli=1"><img src="Images/GooglePlay.png" alt="Google Play" ></a>
-        <a href="https://www.apple.com/app-store/"><img src="Images/AppStore.png" alt="App Store"></a>
-        <a href="https://consumer.huawei.com/fi/mobileservices/appgallery/"> <img src="Images/AppGallery.png" alt="App Gallery"></a>
-       <a href="https://apps.microsoft.com/home?hl=en-US&gl=US"><img src="Images/WinStore.png" alt="Windows Store"></a>
-        
-    </div>
-</div>
-<div class="bottom-right">
-    <h2>Opportunities are Endless with LinnaTaxi.</h2>
-        <p class="last">
-          If you own a Car, SUV, Van, Cab, Mini Van, We got rides for you! Join
-          the largest network of drivers in the country & make driving fun while
-          you earn over 5,000 Euros per month </p>
-                <ul>
-          <li>Enjoy a Monthly Income of 5,000
-            Euros & upwards</li> 
-            <li>  Get a Life Insurance Cover of 100,000 Euros(Inclusive
-                critical illness)</li> 
-                <li>Earn weekly and daily incentives </li>
-                <li>Pay Lesser
-                    Commission while receiving Higher Earnings</li> 
-                    <li>Immediate Earnings
-                        regardless of payment methods</li>
-                    </ul>
-</div>
+
+    <?php include 'footer.php'; ?>
+
     <script>
-       function closePopup() {
-    let popup = document.getElementById("popup");
-    popup.classList.remove("open-popup");
-}
-
-function openPopup(event) {
-    event.preventDefault(); // Prevent form submission
-
-    let inputs = document.querySelectorAll('.form input[required], .form select[required]');
-    let allFilled = true;
-
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            allFilled = false;
-            input.style.borderColor = "red"; // Highlight empty fields
-        } else {
-            input.style.borderColor = ""; // Reset border for filled fields
-        }
-    });
-
-    if (allFilled) {
+      function closePopup() {
         let popup = document.getElementById("popup");
-        popup.classList.add("open-popup");
-    }
-}
+        popup.classList.remove("open-popup");
+        let form = document.querySelector(".form");
+        form.reset();
+      }
 
-      
-       
-    </script> 
-        <?php 
-// Include the header file
-    include 'footer.php';
-    ?>
-</body>
+      function openPopup(event) {
+        event.preventDefault();
+        let inputs = document.querySelectorAll('.form input[required], .form select[required]');
+        let allFilled = true;
+
+        inputs.forEach(input => {
+          if (!input.value.trim()) {
+            allFilled = false;
+            input.style.borderColor = "red";
+          } else {
+            input.style.borderColor = "";
+          }
+        });
+
+        if (allFilled) {
+          let popup = document.getElementById("popup");
+          popup.classList.add("open-popup");
+        }
+      }
+    </script>
+  </body>
 </html>
