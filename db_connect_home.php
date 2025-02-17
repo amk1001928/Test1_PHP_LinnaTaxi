@@ -4,9 +4,9 @@ ini_set('memory_limit', '1024M');
 
 // Assigning of server information
 $servername = "localhost";
-$username = "amk1001929";
-$password = "uy52FMU9";
-$dbname = "wp_amk1001929";
+$username = "amk1001928";
+$password = "";
+$dbname = "wp_amk1001928";
 
 // creating connection 
 $connect = new mysqli($servername, $username, $password, $dbname);
