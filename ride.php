@@ -31,16 +31,26 @@
                 <div class="col-lg-4"></div>
                 <div class="col-lg-8">
                     <div class="calling">
-                        <h1 class="mb-4">Plan your Trip</h1>
-                        <p class="mb-4">
-                            We are currently not taking bookings on this website.<br>
-                            Please use the LinnaTaxi app or Contact the Call center
-                        </p>
-                        <ul class="list-unstyled mb-4">
-                            <li>Call center - 1331 (Local Hotline)</li>
-                            <li>+358 41 741 4141 (IDD - Outside Finland)</li>
-                            <li>+358 41 741 4142 (Helsinki AirPort Hotline)</li>
-                        </ul>
+                    <h3 class="mb-4">Apply for your ride now!</h3>
+                  <div class="application">
+                    <form action="#" class="form">
+                      <div class="input-box">
+                        <input type="text" placeholder="Name" required></br>
+                        <input type="text" placeholder="Start Location" required></br>
+                        <input type="text" placeholder="End Location" required></br>
+                        <input type="tel" placeholder="Mobile" required></br>
+                        <button type="submit" class="btn" onclick="openPopup(event)">Apply</button>  
+                          <div class="popup" id="popup"> 
+                            <img src="Images/thic.png" alt="tick">
+                            <h3>Thank you for Choosing LinnaTaxi!</h3>
+                            <p class="tickbox"> Your details has been successfully submitted.</br>
+                            Your Driver will contact you immediately</p>
+                            <button type="button" onclick="closePopup()">OK</button>  
+                          </div>                 
+                      </div>
+                    </form>
+                  </div>
+                  </br>  
                         
                         <h3 class="mb-3">Scan the QR Now!</h3>
                         <img src="Images/QR.jpg" alt="QR Code" class="qr-code mb-4">
@@ -129,7 +139,7 @@
     form.reset(); // Reset form fields
     }, 500); // Small delay to avoid instant reset
   </script> 
-    <?php 
+    <?php
 // Include the header file
     include 'footer.php';
     ?>
