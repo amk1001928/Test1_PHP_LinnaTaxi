@@ -33,20 +33,25 @@
                     <div class="calling">
                     <h3 class="mb-4">Apply for your ride now!</h3>
                   <div class="application">
-                    <form action="#" class="form">
+                    <form action="dataride.php" class="form" method="post" id="riderForm">
                       <div class="input-box">
-                      <input type="text" name="name" placeholder="Name" required></br>
-                        <input type="text" name="startlocation" placeholder="Start Location" required></br>
-                        <input type="text" name="endlocation" placeholder="End Location" required></br>
-                        <input type="tel" name="mobile" placeholder="Mobile" required></br>
-                        <button type="submit" class="btn" onclick="openPopup(event)">Apply</button>  
-                          <div class="popup" id="popup"> 
-                            <img src="Images/thic.png" alt="tick">
-                            <h3>Thank you for Choosing LinnaTaxi!</h3>
-                            <p class="tickbox"> Your details has been successfully submitted.</br>
-                            Your Driver will contact you immediately</p>
-                            <button type="button" onclick="closePopup()">OK</button>  
-                          </div>                 
+                      <input type="text" class="form-control" name="name" placeholder="Name" required></br>
+                        <input type="text" class="form-control" name="startlocation" placeholder="Start Location" required></br>
+                        <input type="text" class="form-control" name="endlocation" placeholder="End Location" required></br>
+                        <input type="tel" class="form-control" name="mobile" placeholder="Mobile" required></br>
+                         
+                        <div class="d-grid gap-2 col-3 mx-auto">
+            <button class="btn btn-primary" type="submit">Apply</button>
+        </div>
+    </div>
+
+</form>
+<div class="popup" id="popup"> 
+    <img src="Images/thic.png" alt="tick">
+    <h3>Thank you!</h3>
+    <p class="tickbox">Your details has been successfully submitted.</p>
+    <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
+</div>
                       </div>
                     </form>
                   </div>
@@ -108,37 +113,35 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      function closePopup() {
-      let popup = document.getElementById("popup");
-      popup.classList.remove("open-popup");
-      let form = document.querySelector(".form");
-      form.reset();
-      }
+function closePopup() {
+    let popup = document.getElementById("popup");
+    popup.classList.remove("open-popup");
+}
 
-      function openPopup(event) {
-      event.preventDefault(); // Prevent form submission
+document.getElementById('riderForm').addEventListener('submit', function(event) {
+    let inputs = document.querySelectorAll('.form input[required]');
+    let allFilled = true;
 
-      let inputs = document.querySelectorAll('.form input[required], .form select[required]');
-      let allFilled = true;
-
-      inputs.forEach(input => {
+    inputs.forEach(input => {
         if (!input.value.trim()) {
-           allFilled = false;
-           input.style.borderColor = "red"; // Highlight empty fields
+            allFilled = false;
+            input.style.borderColor = "red";
         } else {
-           input.style.borderColor = ""; // Reset border for filled fields
+            input.style.borderColor = "";
         }
-      });
+    });
 
-      if (allFilled) {
-        let popup = document.getElementById("popup");
-        popup.classList.add("open-popup");
-      }
-    }
-    setTimeout(() => {
-    form.reset(); // Reset form fields
-    }, 500); // Small delay to avoid instant reset
-  </script> 
+    if (!allFilled) {
+        event.preventDefault();
+    } else {
+        // Show popup after successful submission
+        setTimeout(() => {
+            let popup = document.getElementById("popup");
+            popup.classList.add("open-popup");
+        }, 500);
+   }
+});
+</script>
     <?php
 // Include the header file
     include 'footer.php';
