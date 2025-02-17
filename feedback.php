@@ -24,22 +24,22 @@
 <!-- Include Header -->
 <?php include 'header.php'; ?>
 
-          <div class="first-frame">
+            <div class="first-frame">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-7">
                             <h2>How is your Ride......</h2>
                             <br>
-                                <form>
+                                <form method="POST" action="datafeedback.php">
                                     <label for="driver-Performance">How would you rate the professionalism and behavior of your driver?</label>
                                     <br>
                                     <img src="Images/smile.png.jpg" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="radio"  id="driver_Performance" name="driver_Performance"  alt="driver_Performance" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="driver_Performance" name="driver_Performance" alt="driver_Performance" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="Driver_Performance" name="driver_Performance"  alt="driver_Performance" class="sad">
+                                    <input type="radio" value="good" id="driver_Performance" name="driver_Performance"  alt="driver_Performance" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value="average" id="driver_Performance" name="driver_Performance" alt="driver_Performance" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value= "bad"id="Driver_Performance" name="driver_Performance"  alt="driver_Performance" class="sad">
                                     <br>
                                     <label for="vehicle-condition">How would you rate the cleanliness and condition of the vehicle?</label>
                                     <br>
@@ -47,9 +47,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="radio"  id="vehicle_condition" name="vehicle_condition" alt="vehicle_condition"  class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="vehicle_condition" name="vehicle_condition"  alt="vehicle_condition"class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="vehicle_condition" name="vehicle_condition"alt="vehicle_condition" class="sad">
+                                    <input type="radio" value="good"  id="vehicle_condition" name="vehicle_condition" alt="vehicle_condition"  class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value="average"  id="vehicle_condition" name="vehicle_condition"  alt="vehicle_condition"class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value= "bad" id="vehicle_condition" name="vehicle_condition"alt="vehicle_condition" class="sad">
                                     <br>
                                     <label for="timeliness">How would you rate the punctuality of your driver?</label>
                                     <br>
@@ -57,9 +57,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="radio"  id="timeliness" name="timeliness"  alt="timeliness" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="timeliness" name="timeliness"  alt="timeliness" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="timeliness" name="timeliness" alt="timeliness" class="sad">
+                                    <input type="radio" value="good" id="timeliness" name="timeliness"  alt="timeliness" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value="average" id="timeliness" name="timeliness"  alt="timeliness" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value= "bad"  id="timeliness" name="timeliness" alt="timeliness" class="sad">
                                     <br>
                                     <label for="booking-process">How easy was it to book a ride using the Pick Me app?</label>
                                     <br>
@@ -67,9 +67,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="radio"  id="booking_process" name="booking_process"  alt="booking_process" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="booking_process" name="booking_process" alt="booking_process" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="booking_process" name="booking_process"  alt="booking_process" class="sad">
+                                    <input type="radio" value="good"  id="booking_process" name="booking_process"  alt="booking_process" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value="average" id="booking_process" name="booking_process" alt="booking_process" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value= "bad"  id="booking_process" name="booking_process"  alt="booking_process" class="sad">
                                     <br>
                                     <label for="overall-satisfaction">How would you rate your overall experience with our service?</label>
                                     <br>
@@ -77,9 +77,9 @@
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="radio"  id="overall_satisfaction" name="overall_satisfaction"  alt="overall_satisfaction" class="smile" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="overall_satisfaction" name="overall_satisfaction"  alt="overall_satisfaction"class="medium" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="radio"  id="overall_satisfaction" name="overall_satisfaction" alt="overall_satisfaction" class="sad">
+                                    <input type="radio"  value="good" id="overall_satisfaction" name="overall_satisfaction"  alt="overall_satisfaction" class="smile" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio"  value="average" id="overall_satisfaction" name="overall_satisfaction"  alt="overall_satisfaction"class="medium" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" value= "bad"  id="overall_satisfaction" name="overall_satisfaction" alt="overall_satisfaction" class="sad">
                                     <br><br>
 
                                     <!--<input type="submit" value="Submit Feedback">-->
