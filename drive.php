@@ -129,36 +129,36 @@ include 'db_drive_connect.php'; // Include database connection
     <?php include 'footer.php'; ?>
 
     <script>
-      document.getElementById("form").addEventListener("button", function(event)) {
-    event.preventDefault(); // Prevent form submission
-      
-
-      function closePopup() {
-        let popup = document.getElementById("popup");
-        popup.classList.remove("open-popup");
-        let form = document.querySelector(".form");
-        form.reset();
-      }
-
-      function openPopup(event) {
-        event.preventDefault();
-        let inputs = document.querySelectorAll('.form input[required], .form select[required]');
-        let allFilled = true;
-
-        inputs.forEach(input => {
-          if (!input.value.trim()) {
-            allFilled = false;
-            input.style.borderColor = "red";
-          } else {
-            input.style.borderColor = "";
-          }
-        });
-
-        if (allFilled) {
-          let popup = document.getElementById("popup");
-          popup.classList.add("open-popup");
-        }
-      }}
-    </script>
+        function closePopup() {
+     let popup = document.getElementById("popup");
+     popup.classList.remove("open-popup");
+ }
+ 
+ function openPopup(event) {
+     event.preventDefault(); // Prevent form submission
+ 
+     let inputs = document.querySelectorAll('.form input[required], .form select[required]');
+     let allFilled = true;
+ 
+     inputs.forEach(input => {
+         if (!input.value.trim()) {
+             allFilled = false;
+             input.style.borderColor = "red"; // Highlight empty fields
+         } else {
+             input.style.borderColor = ""; // Reset border for filled fields
+         }
+     });
+ 
+     if (allFilled) {
+         let popup = document.getElementById("popup");
+         popup.classList.add("open-popup");
+     }
+ }
+  
+ setTimeout(() => {
+                form.reset(); // Reset form fields
+            }, 500); // Small delay to avoid instant reset
+        
+     </script> 
   </body>
 </html>
