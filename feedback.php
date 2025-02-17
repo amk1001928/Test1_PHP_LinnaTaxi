@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinnaTaxi - Home</title>
+    <title>Feedback - LinnaTaxi</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="AboutUs.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="aboutus.css">
 
 
     <!-- Google Fonts -->
@@ -21,35 +20,11 @@
 </head>
 
 <body>
-        <header class="header fixed-top">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="logo">
-                    <img src="Images/Logo.png" alt="LinnaTaxi Logo" class="img-fluid" />
-                    </div>
-                        <!-- Hamburger Button -->
-                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="index.html" class="menu-button">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="ride.html" class="menu-button">Ride</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="drive.html" class="menu-button">Drive</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="AboutUs.html" class="menu-button">About Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="first-frame">
+    
+<!-- Include Header -->
+<?php include 'header.php'; ?>
+
+          <div class="first-frame">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-7">
