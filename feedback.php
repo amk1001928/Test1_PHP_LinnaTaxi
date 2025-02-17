@@ -56,15 +56,15 @@
                             <h2>How is your Ride......</h2>
                             <br>
                                 <form>
-                                    <label for="Driver-Performance">How would you rate the professionalism and behavior of your driver?</label>
+                                    <label for="driver-Performance">How would you rate the professionalism and behavior of your driver?</label>
                                     <br>
                                     <img src="Images/smile.png.jpg" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/medium.jpg" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <img src="Images/sad.jpg" class="sad">
                                     <br>
-                                    <input type="checkbox"  id="Driver-Performance" name="Driver-Performance"  alt="Driver-Performance" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="Driver-Performance" name="Driver-Performance" alt="Driver-Performance" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox"  id="Driver-Performance" name="Driver-Performance"  alt="Driver-Performance" class="sad">
+                                    <input type="checkbox"  id="driver-Performance" name="driver-Performance"  alt="driver-Performance" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox"  id="driver-Performance" name="driver-Performance" alt="driver-Performance" class="medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox"  id="Driver-Performance" name="driver-Performance"  alt="driver-Performance" class="sad">
                                     <br>
                                     <label for="vehicle-condition">How would you rate the cleanliness and condition of the vehicle?</label>
                                     <br>
