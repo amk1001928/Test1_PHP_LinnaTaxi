@@ -34,8 +34,8 @@ include 'db_drive_connect.php'; // Include database connection
           <div class="col-lg-6 form-column">
             <div class="form-wrapper">
               <h1 class="signup">Signup to Drive LinnaTaxi</h1>
-              <form action="data_drive.php" class="form" method="post" >
-              <div class="input-box">
+              <form action="data_drive.php" class="form" method="post" id="driverForm">
+    <div class="input-box">
         <input type="text" class="form-control" name="firstName" placeholder="First name" required>
         <input type="text" class="form-control" name="lastName" placeholder="Last name" required>
         <input type="email" class="form-control" name="email" placeholder="Email" required>
@@ -54,16 +54,16 @@ include 'db_drive_connect.php'; // Include database connection
         </select>
         
         <div class="d-grid gap-2 col-3 mx-auto">
-              <button class="btn btn-primary" type="button" onclick="openPopup(event)">Register</button>
-              <div class="popup" id="popup"> 
-                <img src="Images/thic.png" alt="tick">
-                <h3>Thank you!</h3>
-                <p class="tickbox"> Your details has been successfully submitted.</p>
-                <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
-                  
-            </div></div>
+            <button class="btn btn-primary" type="submit">Register</button>
+        </div>
     </div>
-              </form>
+</form>
+<div class="popup" id="popup"> 
+    <img src="Images/thic.png" alt="tick">
+    <h3>Thank you!</h3>
+    <p class="tickbox">Your details has been successfully submitted.</p>
+    <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
+</div>
             </div>
           </div>
         </div>
@@ -129,36 +129,34 @@ include 'db_drive_connect.php'; // Include database connection
     <?php include 'footer.php'; ?>
 
     <script>
-        function closePopup() {
-     let popup = document.getElementById("popup");
-     popup.classList.remove("open-popup");
- }
- 
- function openPopup(event) {
-     event.preventDefault(); // Prevent form submission
- 
-     let inputs = document.querySelectorAll('.form input[required], .form select[required]');
-     let allFilled = true;
- 
-     inputs.forEach(input => {
-         if (!input.value.trim()) {
-             allFilled = false;
-             input.style.borderColor = "red"; // Highlight empty fields
-         } else {
-             input.style.borderColor = "";   // Reset border for filled fields
-         }
-     });
- 
-     if (allFilled) {
-         let popup = document.getElementById("popup");
-         popup.classList.add("open-popup");
-     }
- }
-  
- setTimeout(() => {
-                form.reset(); // Reset form fields
-            }, 500); // Small delay to avoid instant reset
-        
-     </script> 
+function closePopup() {
+    let popup = document.getElementById("popup");
+    popup.classList.remove("open-popup");
+}
+
+document.getElementById('driverForm').addEventListener('submit', function(event) {
+    let inputs = document.querySelectorAll('.form input[required], .form select[required]');
+    let allFilled = true;
+
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            allFilled = false;
+            input.style.borderColor = "red";
+        } else {
+            input.style.borderColor = "";
+        }
+    });
+
+    if (!allFilled) {
+        event.preventDefault();
+    } else {
+        // Show popup after successful submission
+        setTimeout(() => {
+            let popup = document.getElementById("popup");
+            popup.classList.add("open-popup");
+        }, 500);
+    }
+});
+</script>
   </body>
 </html>
