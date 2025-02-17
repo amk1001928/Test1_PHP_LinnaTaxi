@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinnaTaxi - Home</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,8 +19,10 @@
 </head>
 
 <body>
-    <!-- Include Header -->
+
+<!-- Include Header -->
 <?php include 'header.php'; ?>
+
     <div class="first-frame">
         <div class="container py-5">
             <div class="row">
@@ -54,7 +57,8 @@
                         <li>Continuous Improvement</li>
                         <li> Local Expertise: We know Hämeenlinna like the back of our hand, ensuring efficient routes and excellent service.</li>
                     </ul>
-                    <p>Thank you for choosing LinnaTaxi. Your destination is our priority!</p>   
+                    <p>Thank you for choosing LinnaTaxi. Your destination is our priority!<strong> <a href="feedback.html">We value your feedback!</a></strong> </p>   
+
 
                 </div>
             </div>
@@ -135,11 +139,8 @@
             </div>
         </div>
     </div>
-    
-    <?php 
-// Include the header file
-    include 'footer.php';
-    ?>
+<!-- Include Footer -->
+<?php include 'footer.php'; ?>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

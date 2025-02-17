@@ -5,6 +5,11 @@ body {
     padding-top: 80px; 
 }
 
+.h2{
+
+    padding-left: 300px; 
+}
+
 
 /* First Frame */
 .first-frame {
@@ -59,6 +64,9 @@ body {
     height: auto;
 }
 
+
+
+
 /* adding hover to the images */
 
 .CEO_Img:hover  {
@@ -103,22 +111,155 @@ background-color: #f6d028;
     margin: 0.5rem 0;
 }
 
-
 /* Responsive Adjustments */
+@media (max-width: 992px) {
+    .nav {
+        margin-top: 1rem;
+    }
+    
+    .menu-button {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .logo img {
+        max-width: 120px;
+    }
+}
 
-@media (max-width: 991.98px) {
-
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 0;
+    }
+    
+    .nav .d-flex {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    
+    .menu-button {
+        margin: 0.5rem;
+    }
+    
     .first-frame,
     .second-frame {
         padding: 1rem 0;
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 576px) {
     body {
         padding-top: 120px;
     }
     
+    .logo {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .menu-button {
+        width: 100%;
+        text-align: center;
+        margin: 0.25rem 0;
+    }
+}
+
+/*popup style*/
+.popup{
+    width:400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 30px 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition:0.4s, top 0.4s;
+}
+
+.open-popup{
+visibility: visible;
+top: 100%;
+transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0,0, 0.2);
+}
+
+.popup h3{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #ffdd49;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0,0, 0.2);
+}
+
+/*images for feedback sheet*/
+.smile
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: auto;
+    
 
 }
 
+.sad
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: auto;
+}
+
+
+.medium
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: auto;
+    
+}
+
+.col-12
+{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.feedback
+{
+    
+    width: 500px;
+    height: auto;
+
+    
+}
+
+.btn
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width:100px;
+    height: auto;
+    border: #0e0e0e;
+
+    
+}
