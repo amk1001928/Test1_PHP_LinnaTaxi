@@ -14,7 +14,7 @@ include 'db_drive_connect.php'; // Include database connection
 
     // SQL query to insert data
     $sql = "INSERT INTO drivers (first_name, last_name, email, mobile, vehicle_type, vehicle_make, vehicle_model, availability, working_district)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            VALUES ( $firstName, $lastName, $email, $mobile, $vehicleType, $vehicleModel, $availability ,  $workingDistrict)";
 
     if ($connect->query($sql) === TRUE) {
         header("Location: drive.php?register=success"); // Redirect on successful registation 
