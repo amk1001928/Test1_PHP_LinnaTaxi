@@ -35,10 +35,10 @@
                   <div class="application">
                     <form action="#" class="form">
                       <div class="input-box">
-                        <input type="text" placeholder="Name" required></br>
-                        <input type="text" placeholder="Start Location" required></br>
-                        <input type="text" placeholder="End Location" required></br>
-                        <input type="tel" placeholder="Mobile" required></br>
+                      <input type="text" name="name" placeholder="Name" required></br>
+                        <input type="text" name="startlocation" placeholder="Start Location" required></br>
+                        <input type="text" name="endlocation" placeholder="End Location" required></br>
+                        <input type="tel" name="mobile" placeholder="Mobile" required></br>
                         <button type="submit" class="btn" onclick="openPopup(event)">Apply</button>  
                           <div class="popup" id="popup"> 
                             <img src="Images/thic.png" alt="tick">
