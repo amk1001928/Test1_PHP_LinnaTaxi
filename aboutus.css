@@ -182,7 +182,7 @@ background-color: #f6d028;
 
 .open-popup{
 visibility: visible;
-top: 100%;
+top: 50%;
 transform: translate(-50%,-50%) scale(1);
 }
 

@@ -1,3 +1,7 @@
+<?php
+include 'db_connect_feedback.php'; // Include database connection
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,27 +120,23 @@
     
         function openPopup(event) {
             event.preventDefault(); // Prevent form submission
+
+        // Check if any radio button in each group is selected
+        const groups = ['driver_Performance', 'vehicle_condition', 'timeliness', 'booking_process', 'overall_satisfaction'];
+        let allSelected = true;
     
-            let inputs = document.querySelectorAll('.form input[required], .form select[required]');
-            let allFilled = true;
-    
-            inputs.forEach(input => {
-                if (!input.value.trim()) {  // Check if input/select is empty
-                    allFilled = false;
-                    input.style.borderColor = "red"; // Highlight empty fields
-                } else {
-                    input.style.borderColor = ""; // Reset border for filled fields
-                }
-            });
-    
-            if (allFilled) {
-                let popup = document.getElementById("popup");
-                popup.classList.add("open-popup");
-            }
+        groups.forEach(group => {
+        if (!document.querySelector(`input[name="${group}"]:checked`)) {
+            allSelected = false;
         }
-        setTimeout(() => {
-                    form.reset(); // Reset form fields
-                }, 500); // Small delay to avoid instant reset
+    });
+
+    if (allSelected) {
+        document.querySelector('form').submit(); // Submit the form
+    } else {
+        alert('Please fill in all feedback options');
+    }
+
             
         </script>
 </body>
