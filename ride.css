@@ -106,9 +106,9 @@ input{
     font-size: 18px;
     font-weight: bold;
     width: 80%;
-    background-color: #f3a006;
+    background-color: #ffaa0d;
     font-size: 1rem;
-    color: #e2dfdf;
+    color: hsl(45, 96%, 47%);
     outline: none;
     border: 1px solid #ddd;
     border-radius: 3px;
