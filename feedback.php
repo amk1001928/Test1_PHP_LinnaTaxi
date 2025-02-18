@@ -88,12 +88,6 @@ include 'db_connect_feedback.php'; // Include database connection
 
                                     <!--<input type="submit" value="Submit Feedback">-->
                                     <button type="submit" class="btn" onclick="openPopup(event)"> <strong>Submit</strong></button>  
-                                    <!--<div class="popup" id="popup"> 
-                                        <img src="Images/thic.png" alt="tick">
-                                        <h3>Thank you!</h3>
-                                        <p class="tickbox"> Your feedback submitted.</p>
-                                        <button type="button" onclick="closePopup()">OK</button>  
-                                    </div>-->
                                 </form>
                         </div>
                         <div class="col-5">
@@ -108,36 +102,6 @@ include 'db_connect_feedback.php'; // Include database connection
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- java script for pop up -->
-    <!--<script>
-        function closePopup() {
-            let popup = document.getElementById("popup");
-            popup.classList.remove("open-popup");
-    
-            let form = document.querySelector(".form");
-            form.reset();
-        }
-    
-        function openPopup(event) {
-            event.preventDefault(); // Prevent form submission
 
-        // Check if any radio button in each group is selected
-        const groups = ['driver_Performance', 'vehicle_condition', 'timeliness', 'booking_process', 'overall_satisfaction'];
-        let allSelected = true;
-    
-        groups.forEach(group => {
-        if (!document.querySelector(`input[name="${group}"]:checked`)) {
-            allSelected = false;
-        }
-    });
-
-    if (allSelected) {
-        document.querySelector('form').submit(); // Submit the form
-    } else {
-        alert('Please fill in all feedback options');
-    }
-
-            
-        </script> -->
 </body>
 </html>
