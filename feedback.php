@@ -88,12 +88,12 @@ include 'db_connect_feedback.php'; // Include database connection
 
                                     <!--<input type="submit" value="Submit Feedback">-->
                                     <button type="submit" class="btn" onclick="openPopup(event)"> <strong>Submit</strong></button>  
-                                    <div class="popup" id="popup"> 
+                                    <!--<div class="popup" id="popup"> 
                                         <img src="Images/thic.png" alt="tick">
                                         <h3>Thank you!</h3>
                                         <p class="tickbox"> Your feedback submitted.</p>
                                         <button type="button" onclick="closePopup()">OK</button>  
-                                    </div>
+                                    </div>-->
                                 </form>
                         </div>
                         <div class="col-5">
@@ -109,7 +109,7 @@ include 'db_connect_feedback.php'; // Include database connection
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- java script for pop up -->
-    <script>
+    <!--<script>
         function closePopup() {
             let popup = document.getElementById("popup");
             popup.classList.remove("open-popup");
@@ -138,6 +138,6 @@ include 'db_connect_feedback.php'; // Include database connection
     }
 
             
-        </script>
+        </script> -->
 </body>
 </html>
