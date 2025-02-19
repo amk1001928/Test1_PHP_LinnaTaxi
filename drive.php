@@ -141,12 +141,38 @@ include 'db_connect.php'; // Include database connection
     <?php include 'footer.php'; ?>
 
     <script>
-function closePopup() {
+  function closePopup() {
     let popup = document.getElementById("popup");
     popup.classList.remove("open-popup");
+    
+    // Clear form inputs after closing popup
+    let form = document.getElementById('driverForm');
+    let inputs = form.querySelectorAll('input, select');
+    inputs.forEach(input => {
+        input.value = '';
+    });
+    
+    // Clear cookies
+    const cookieNames = [
+        'firstName',
+        'lastName',
+        'email',
+        'mobile',
+        'vehicleType',
+        'vehicleMake',
+        'vehicleModel',
+        'availability',
+        'workingDistrict'
+    ];
+    
+    cookieNames.forEach(name => {
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+    });
 }
 
 document.getElementById('driverForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    
     let inputs = document.querySelectorAll('.form input[required], .form select[required]');
     let allFilled = true;
 
@@ -159,14 +185,14 @@ document.getElementById('driverForm').addEventListener('submit', function(event)
         }
     });
 
-    if (!allFilled) {
-        event.preventDefault();
-    } else {
-        // Show popup after successful submission
+    if (allFilled) {
+        let popup = document.getElementById("popup");
+        popup.classList.add("open-popup");
+        
+        // Submit the form after showing popup
         setTimeout(() => {
-            let popup = document.getElementById("popup");
-            popup.classList.add("open-popup");
-        }, 500);
+            this.submit();
+        }, 2000); // 2 second delay to show popup before submission
     }
 });
 </script>
