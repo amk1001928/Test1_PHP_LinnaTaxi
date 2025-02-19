@@ -1,5 +1,5 @@
 <?php
-include 'db_connect_home.php'; // Include database connection
+include 'db_connect.php'; // Include database connection
 ?>
 
 
