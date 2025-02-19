@@ -1,3 +1,7 @@
+<?php
+include 'db_connect_feedback.php'; // Include database connection
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,12 +88,6 @@
 
                                     <!--<input type="submit" value="Submit Feedback">-->
                                     <button type="submit" class="btn" onclick="openPopup(event)"> <strong>Submit</strong></button>  
-                                    <div class="popup" id="popup"> 
-                                        <img src="Images/thic.png" alt="tick">
-                                        <h3>Thank you!</h3>
-                                        <p class="tickbox"> Your feedback submitted.</p>
-                                        <button type="button" onclick="closePopup()">OK</button>  
-                                    </div>
                                 </form>
                         </div>
                         <div class="col-5">
@@ -104,40 +102,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- java script for pop up -->
-    <script>
-        function closePopup() {
-            let popup = document.getElementById("popup");
-            popup.classList.remove("open-popup");
-    
-            let form = document.querySelector(".form");
-            form.reset();
-        }
-    
-        function openPopup(event) {
-            event.preventDefault(); // Prevent form submission
-    
-            let inputs = document.querySelectorAll('.form input[required], .form select[required]');
-            let allFilled = true;
-    
-            inputs.forEach(input => {
-                if (!input.value.trim()) {  // Check if input/select is empty
-                    allFilled = false;
-                    input.style.borderColor = "red"; // Highlight empty fields
-                } else {
-                    input.style.borderColor = ""; // Reset border for filled fields
-                }
-            });
-    
-            if (allFilled) {
-                let popup = document.getElementById("popup");
-                popup.classList.add("open-popup");
-            }
-        }
-        setTimeout(() => {
-                    form.reset(); // Reset form fields
-                }, 500); // Small delay to avoid instant reset
-            
-        </script>
+
 </body>
 </html>
