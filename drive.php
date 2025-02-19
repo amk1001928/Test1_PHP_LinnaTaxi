@@ -1,6 +1,5 @@
 <?php
-session_start();
-include 'db_connect.php'; // Include database connection
+include 'db_connect_home.php'; // Include database connection
 ?>
 
 
@@ -9,22 +8,20 @@ include 'db_connect.php'; // Include database connection
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drive - LinnaTaxi</title>
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="drive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet" href="drive.css" />
-
   </head>
   <body>
-    <?php include 'header.php'; ?>
+  <?php 
+// Include the header file
+    include 'header.php';
+    ?>
 
     <section class="first-frame">
       <div class="container-fluid px-0">
@@ -42,29 +39,23 @@ include 'db_connect.php'; // Include database connection
               <h1 class="signup">Signup to Drive LinnaTaxi</h1>
               <form action="data_drive.php" class="form" method="post" id="driverForm">
     <div class="input-box">
-        
-        <input type="text" class="form-control" name="firstName" placeholder="First name" value="<?php echo isset($_COOKIE['firstName']) ? htmlspecialchars($_COOKIE['firstName']) : ''; ?>" required>
-        <input type="text" class="form-control" name="lastName" placeholder="Last name" value="<?php echo isset($_COOKIE['lastName']) ? htmlspecialchars($_COOKIE['lastName']) : ''; ?>" required>
-        <input type="email" class="form-control" name="email" placeholder="Email" value="<?php echo isset($_COOKIE['email']) ? htmlspecialchars($_COOKIE['email']) : ''; ?>" required>
-        <input type="text" class="form-control" name="mobile" placeholder="Mobile" value="<?php echo isset($_COOKIE['mobile']) ? htmlspecialchars($_COOKIE['mobile']) : ''; ?>" required>
-        <input type="text" class="form-control" name="vehicleType" placeholder="Vehicle Type" value="<?php echo isset($_COOKIE['vehicleType']) ? htmlspecialchars($_COOKIE['vehicleType']) : ''; ?>" required>
-        <input type="text" class="form-control" name="vehicleMake" placeholder="Vehicle Make" value="<?php echo isset($_COOKIE['vehicleMake']) ? htmlspecialchars($_COOKIE['vehicleMake']) : ''; ?>" required>
-        <input type="text" class="form-control" name="vehicleModel" placeholder="Vehicle Model" value="<?php echo isset($_COOKIE['vehicleModel']) ? htmlspecialchars($_COOKIE['vehicleModel']) : ''; ?>" required>
-       
-
+        <input type="text" class="form-control" name="firstName" placeholder="First name" required>
+        <input type="text" class="form-control" name="lastName" placeholder="Last name" required>
+        <input type="email" class="form-control" name="email" placeholder="Email" required>
+        <input type="text" class="form-control" name="mobile" placeholder="Mobile" required>
+        <input type="text" class="form-control" name="vehicleType" placeholder="Vehicle Type" required>
+        <input type="text" class="form-control" name="vehicleMake" placeholder="Vehicle Make" required>
+        <input type="text" class="form-control" name="vehicleModel" placeholder="Vehicle Model" required>
         <select class="form-select" name="availability" required>
             <option value="">Availability</option>
-            <option value="full-time" <?php echo (isset($_COOKIE['availability']) && $_COOKIE['availability'] == 'full-time') ? 'selected' : ''; ?>>Full time</option>
-            <option value="part-time" <?php echo (isset($_COOKIE['availability']) && $_COOKIE['availability'] == 'part-time') ? 'selected' : ''; ?>>Part time</option>
+            <option value="full-time">Full time</option>
+            <option value="part-time">Part time</option>
         </select>
-
         <select class="form-select" name="workingDistrict" required>
             <option value="">Working District</option>
-            <option value="hämeenlinna" <?php echo (isset($_COOKIE['workingDistrict']) && $_COOKIE['workingDistrict'] == 'hämeenlinna') ? 'selected' : ''; ?>>Hämeenlinna</option>
-       
+            <option value="hÃ¤meenlinna">HÃ¤meenlinna</option>
         </select>
-
-
+        
         <div class="d-grid gap-2 col-3 mx-auto">
             <button class="btn btn-primary" type="submit">Register</button>
         </div>
@@ -141,38 +132,12 @@ include 'db_connect.php'; // Include database connection
     <?php include 'footer.php'; ?>
 
     <script>
-  function closePopup() {
+function closePopup() {
     let popup = document.getElementById("popup");
     popup.classList.remove("open-popup");
-    
-    // Clear form inputs after closing popup
-    let form = document.getElementById('driverForm');
-    let inputs = form.querySelectorAll('input, select');
-    inputs.forEach(input => {
-        input.value = '';
-    });
-    
-    // Clear cookies
-    const cookieNames = [
-        'firstName',
-        'lastName',
-        'email',
-        'mobile',
-        'vehicleType',
-        'vehicleMake',
-        'vehicleModel',
-        'availability',
-        'workingDistrict'
-    ];
-    
-    cookieNames.forEach(name => {
-        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
-    });
 }
 
 document.getElementById('driverForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-    
     let inputs = document.querySelectorAll('.form input[required], .form select[required]');
     let allFilled = true;
 
@@ -185,14 +150,14 @@ document.getElementById('driverForm').addEventListener('submit', function(event)
         }
     });
 
-    if (allFilled) {
-        let popup = document.getElementById("popup");
-        popup.classList.add("open-popup");
-        
-        // Submit the form after showing popup
+    if (!allFilled) {
+        event.preventDefault();
+    } else {
+        // Show popup after successful submission
         setTimeout(() => {
-            this.submit();
-        }, 2000); // 2 second delay to show popup before submission
+            let popup = document.getElementById("popup");
+            popup.classList.add("open-popup");
+        }, 500);
     }
 });
 </script>
