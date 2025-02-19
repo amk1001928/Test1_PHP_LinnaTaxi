@@ -9,7 +9,7 @@ include 'db_connect.php'; // Include database connection
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT); // Hash password
 
     // SQL query to insert data
-    $sql = "INSERT INTO loyalty (firstName, lastName, phoneNo, email, password) 
+    $sql = "INSERT INTO loyalty_customers (first_name, last_name, phone_no, email, password) 
             VALUES ('$firstName', '$lastName', '$phoneNo', '$email', '$password')";
 
     if ($connect->query($sql) === TRUE) {
