@@ -33,7 +33,7 @@ Through this integrated approach, the LinnaTaxi Website serves as a central hub 
 
 Feature 01 : Customer Loyalty Registration
 
-Customer Loyalty Registration is for registering to the customers by using a form as a regular customers of LinnaTaxi service. In here, database used for collect and store the details of registered customers.
+Customer Loyalty Registration is for registering to the customers by using a form as a regular customers of LinnaTaxi service.The index page is linked to Customer Loyalty Registration form and After fill the fields of customer's name, mobile number etc., there has the option to Register in the LinnaTaxi service. In here, database used for collect and store the details of registered customers.
     
     Related codes: 
 
@@ -41,7 +41,7 @@ Customer Loyalty Registration is for registering to the customers by using a for
 
 Feature 02 : Ride booking system
 
-Ride booking system is a taxi reservation system for the customers. In this form, system requires the name, start and end locations of the customers and the mobile number. After filling the fields, customer have a facility to view what they feed, edit the details or delete the complete entry. All the data saved successfully in the table named "ride" in the database.
+Ride booking system is a taxi reservation system for the customers. In here, system requires the name, start and end locations of the customers and the mobile number. After filling the fields, customer have a facility to view what they feed, edit the details or delete the complete entry. All the data saved successfully in the table named "ride" in the database.
 
     Related codes: 
 
@@ -50,7 +50,7 @@ Ride booking system is a taxi reservation system for the customers. In this form
 
 Feature 03 : Driver Registration
 
-Driver Registration form is for Drivers. In this form, it offers the opportunity to register a person as a driver at LinnaTaxi service and the registered drivers get the chance to earn as a taxi driver. This form has some selection fields to fill such as working district, available time slots so on. Data stored at the table "driver" in the data base.
+Driver Registration is for Drivers. In this feature, it offers the opportunity to register a person as a driver at LinnaTaxi service and the registered drivers get the chance to earn as a taxi driver. This form has some selection fields to fill such as working district, available time slots so on. Data stored at the table "drivers" in the data base.
 
     Related codes: 
 
@@ -58,12 +58,16 @@ Driver Registration form is for Drivers. In this form, it offers the opportunity
 
 Feature 04 : Customer feedback submission
 
+Customer feedback submission is for submit the customer's view of the quality and experience of the LinnaTaxi service."about us" page is linked to "feedback" page. In here, collected feedback is stored in "feedback" table in the data base.
+
     Related codes: 
 
     Link to the feature:
 
 
 Feature 05 : Mobile app integration
+
+Mobile app integration is placed in all the three pages of index, ride and drive. Instead of the web page of LinnaTaxi, this feature is for download the mobile app by using the playstores of service providers and scan the QR code.
 
     Related codes: 
 
