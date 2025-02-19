@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-include 'db_drive_connect.php'; // Include database connection
+include 'db_connect.php'; // Include database connection
 
 $cookieExpiration = time() + (86400);
 setcookie('firstName', $_POST['firstName'], $cookieExpiration);

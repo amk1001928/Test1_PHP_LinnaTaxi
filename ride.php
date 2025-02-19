@@ -1,6 +1,6 @@
 <?php
 session_start(); // Start the session at the very beginning
-include 'db_connect_ride.php'; 
+include 'db_connect.php'; 
 if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
     if(isset($_SESSION['user_name'])) {
         setcookie("user_name", $_SESSION['user_name'], time() + (86400 * 30), "/"); // 30 days
@@ -15,27 +15,32 @@ if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride - LinnaTaxi</title>
 
-    <?php 
-// Include the header file
-    $title ="Ride - LinnaTaxi";
-    include 'header.php';
-    ?>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Connect to CSS files -->
-    <link rel="stylesheet" href="ride.css">
-    <link rel="stylesheet" href="header.css">
     
     <!-- Connect to Google for Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="ride.css">
+
 </head>
 
 <body>
+
+<?php 
+// Include the header file
+    include 'header.php';
+    ?>
+    
+
+
         <!-- First Frame Section -->
     <section class="details">
         <div class="container h-100">

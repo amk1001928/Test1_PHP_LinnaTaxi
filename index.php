@@ -32,7 +32,6 @@
           We provide smart passenger rides with safe, comfortable, and affordable services.
           Ensuring every ride is smooth and stress-free.
           Linna Taxi empowers drivers to build their careers while serving the community.<br>
-          <a href="read_loyalty.php">Go to Loyalty Data</a>
         </p>
         <button class="register-button" onclick="window.location.href='loyaltyregistration.php'">
         Join & Enjoy Exclusive Rewards ! <br> Register Now...!

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db_connect_ride.php'; // Include database connection
+include 'db_connect.php'; // Include database connection
 
 // Store form data in session
 $_SESSION['user_name'] = $_POST['name'];
