@@ -43,8 +43,7 @@ List of the database tables of your project.
 - Table 4 (Puwakdandawa Guruge Amila) : feedback
 
 ## ER Diagram of the database.
-
-Link : https://lucid.app/lucidchart/32fb802d-9205-4538-87e9-5842fab83dcf/edit?invitationId=inv_801473bb-c494-419f-82d8-9816cf37373d&page=0_0#
+![ER Diagram](<Images/ER Diagram.jpg>)
 
 ## Created Forms
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
