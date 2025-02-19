@@ -22,36 +22,33 @@ LinnaTaxi Website is a taxi booking and management system from Hämeenlinna to a
  - Ask with others any other features
 
 
-### Feature 01 : Customer Loyalty Registration
+Feature 01 : Customer Loyalty Registration
 Customer Loyalty Registration is for registering to the customers by using a form as a regular customers of LinnaTaxi service. In here, database used for collect and store the details of registered customers.
 
-### Mobile app integration
+Feature 02 : Ride booking system
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-### Ride booking system
+Feature 03 : Driver Registration
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-### Driver Registration
-
-
-### Customer feedback submission
+Feature 04 : Customer feedback submission
+Feature 05 : Mobile app integration
 
 ## Database Tables
 List of the database tables of your project.
 
-- Table 1 (Jathun Arachchige Darshana) : Customer Loyalty Registration
+- Table 1 (Jathun Arachchige Darshana) : loyalty
 - Table 2 (Walpita Gamage Thanuja) : ride 
-- Table 3 (Thommaya Hakuru Shalika) : Driver Registration
-- Table 4 (Puwakdandawa Guruge Amila) : Customer feedback submission
-
+- Table 3 (Thommaya Hakuru Shalika) : drivers
+- Table 4 (Puwakdandawa Guruge Amila) : feedback
 - ER Diagram of the database.
 
 ## Created Forms
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
 ## Created Tables
 
