@@ -53,7 +53,7 @@ include 'db_connect.php'; // Include database connection
         </select>
         <select class="form-select" name="workingDistrict" required>
             <option value="">Working District</option>
-            <option value="hÃ¤meenlinna">HÃ¤meenlinna</option>
+            <option value="Hameenlinna">Hameenlinna</option>
         </select>
         
         <div class="d-grid gap-2 col-3 mx-auto">
