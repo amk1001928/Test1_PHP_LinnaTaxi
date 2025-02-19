@@ -59,11 +59,14 @@ include 'db_connect.php'; // Include database connection
         </div>
     </div>
 </form>
-<div class="popup" id="popup"> 
+
+
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
     <img src="Images/thic.png" alt="tick">
     <h3>Thank you!</h3>
     <p class="tickbox">Your details has been successfully submitted.</p>
-    <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
+    <button type="button" onclick="closePopup()">Ok</button>
 </div>
             </div>
           </div>
@@ -120,43 +123,42 @@ include 'db_connect.php'; // Include database connection
       </div>
     </section>
 
-    <div class="popup" id="popup">
-      <img src="Images/thic.png" alt="tick">
-      <h3>Thank you!</h3>
-      <p class="tickbox">Your details has been successfully submitted.</p>
-      <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
-    </div>
-
     <?php include 'footer.php'; ?>
 
     <script>
-function closePopup() {
-    let popup = document.getElementById("popup");
-    popup.classList.remove("open-popup");
+function showPopup() {
+    document.getElementById('popup').classList.add('show');
+    document.getElementById('overlay').classList.add('show');
+    document.body.style.overflow = 'hidden';
 }
 
-document.getElementById('driverForm').addEventListener('submit', function(event) {
-    let inputs = document.querySelectorAll('.form input[required], .form select[required]');
-    let allFilled = true;
+function closePopup() {
+    document.getElementById('popup').classList.remove('show');
+    document.getElementById('overlay').classList.remove('show');
+    document.body.style.overflow = 'auto';
+}
 
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            allFilled = false;
-            input.style.borderColor = "red";
-        } else {
-            input.style.borderColor = "";
-        }
-    });
+// Add click  submit button
+document.querySelector('.btn-primary').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent form submission
+    showPopup(); // Show popup immediately on button click
+});
 
-    if (!allFilled) {
-        event.preventDefault();
-    } else {
-        // Show popup after successful submission
-        setTimeout(() => {
-            let popup = document.getElementById("popup");
-            popup.classList.add("open-popup");
-        }, 500);
+// Close popup  clicking overlay
+document.getElementById('overlay').addEventListener('click', closePopup);
+
+// Close popup  ESC key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && document.getElementById('popup').classList.contains('show')) {
+        closePopup();
     }
+});
+
+// Close popup  clicking the Ok button
+document.querySelector('.popup button').addEventListener('click', function() {
+    closePopup();
+ 
+    document.getElementById('driverForm').submit();
 });
 </script>
   </body>
