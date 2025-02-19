@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php'; // Include database connection
+include 'db_connect_home.php'; // Include database connection
 ?>
 
 
@@ -53,7 +53,7 @@ include 'db_connect.php'; // Include database connection
         </select>
         <select class="form-select" name="workingDistrict" required>
             <option value="">Working District</option>
-            <option value="Hämeenlinna">Hämeenlinna</option>
+            <option value="hämeenlinna">Hämeenlinna</option>
         </select>
         
         <div class="d-grid gap-2 col-3 mx-auto">
