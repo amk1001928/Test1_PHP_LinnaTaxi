@@ -1,3 +1,15 @@
+<?php
+session_start(); // Start the session at the very beginning
+include 'db_connect_ride.php'; 
+if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
+    if(isset($_SESSION['user_name'])) {
+        setcookie("user_name", $_SESSION['user_name'], time() + (86400 * 30), "/"); // 30 days
+        setcookie("user_mobile", $_SESSION['user_mobile'], time() + (86400 * 30), "/");
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,33 +42,35 @@
             <div class="row h-100 align-items-center">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-8">
-                    <div class="calling">
-                    <h3 class="mb-4">Apply for your ride now!</h3>
-                  <div class="application">
-                    <form action="dataride.php" class="form" method="post" id="riderForm">
-                      <div class="input-box">
-                      <input type="text" class="form-control" name="name" placeholder="Name" required></br>
-                        <input type="text" class="form-control" name="startlocation" placeholder="Start Location" required></br>
-                        <input type="text" class="form-control" name="endlocation" placeholder="End Location" required></br>
-                        <input type="tel" class="form-control" name="mobile" placeholder="Mobile" required></br>
-                         
-                        <div class="d-grid gap-2 col-3 mx-auto">
-            <button class="btn btn-primary" type="submit">Apply</button>
+                <div class="calling">
+    <h3 class="mb-4">Apply for your ride now!</h3>
+    <div class="application">
+        <form action="dataride.php" class="form" method="post" id="riderForm">
+            <div class="input-box">
+                <input type="text" class="form-control" name="name" 
+                    value="<?php echo isset($_COOKIE['user_name']) ? htmlspecialchars($_COOKIE['user_name']) : ''; ?>" 
+                    placeholder="Name" required>
+                <input type="text" class="form-control" name="startlocation" 
+                    placeholder="Start Location" required>
+                <input type="text" class="form-control" name="endlocation" 
+                    placeholder="End Location" required>
+                <input type="tel" class="form-control" name="mobile" 
+                    value="<?php echo isset($_COOKIE['user_mobile']) ? htmlspecialchars($_COOKIE['user_mobile']) : ''; ?>" 
+                    placeholder="Mobile" required>
+                <div class="d-grid gap-2 col-3 mx-auto">
+                    <button class="btn btn-primary" type="submit">Apply</button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="popup" id="popup"> 
+            <img src="Images/thic.png" alt="tick">
+            <h3>Thank you!</h3>
+            <p class="tickbox">Your details has been successfully submitted.</p>
+            <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
         </div>
     </div>
-
-</form>
-<div class="popup" id="popup"> 
-    <img src="Images/thic.png" alt="tick">
-    <h3>Thank you!</h3>
-    <p class="tickbox">Your details has been successfully submitted.</p>
-    <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
-</div>
-                      </div>
-                    </form>
-                  </div>
-                  </br>  
-                        
+</div> 
                         <h3 class="mb-3">Scan the QR Now!</h3>
                         <img src="Images/QR.jpg" alt="QR Code" class="qr-code mb-4">
                         
@@ -116,6 +130,16 @@
 function closePopup() {
     let popup = document.getElementById("popup");
     popup.classList.remove("open-popup");
+    
+    // Clear form inputs after closing popup
+    let form = document.getElementById('riderForm');
+    let inputs = form.querySelectorAll('input[type="text"], input[type="tel"]');
+    inputs.forEach(input => {
+        // Don't clear the name and mobile if they come from cookies
+        if (input.name !== 'name' && input.name !== 'mobile') {
+            input.value = '';
+        }
+    });
 }
 
 document.getElementById('riderForm').addEventListener('submit', function(event) {
@@ -138,8 +162,15 @@ document.getElementById('riderForm').addEventListener('submit', function(event) 
         setTimeout(() => {
             let popup = document.getElementById("popup");
             popup.classList.add("open-popup");
+            
+            // Clear only location fields immediately after submission
+            let form = document.getElementById('riderForm');
+            let locationInputs = form.querySelectorAll('input[name="startlocation"], input[name="endlocation"]');
+            locationInputs.forEach(input => {
+                input.value = '';
+            });
         }, 500);
-   }
+    }
 });
 </script>
     <?php
