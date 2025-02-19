@@ -125,10 +125,29 @@ List of the forms
 
 List of the tables created in the project work
 
-- Table 1 (Jathun Arachchige Darshana) : Customer Loyalty Registration
-- Table 2 (Walpita Gamage Thanuja) : ride 
-- Table 3 (Thommaya Hakuru Shalika) : Driver Registration
-- Table 4 (Puwakdandawa Guruge Amila) : Customer feedback submission
+- Table 1 (Jathun Arachchige Darshana) : loyalty
+
+        Related codes: 
+
+        Link to the feature:
+
+- Table 2 (Walpita Gamage Thanuja) : ride
+
+        Related codes: 
+
+        Link to the feature:
+
+- Table 3 (Thommaya Hakuru Shalika) : drivers
+
+        Related codes: 
+
+        Link to the feature:
+
+- Table 4 (Puwakdandawa Guruge Amila) : feedback
+
+        Related codes: 
+
+        Link to the feature:
 
 - Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
