@@ -75,7 +75,8 @@ Mobile app integration is placed in all the three pages of index, ride and drive
 
 
 ## Database Tables
-List of the database tables of your project.
+
+List of the database tables of the project.
 
 - Table 1 (Jathun Arachchige Darshana) : loyalty
 - Table 2 (Walpita Gamage Thanuja) : ride 
@@ -83,26 +84,42 @@ List of the database tables of your project.
 - Table 4 (Puwakdandawa Guruge Amila) : feedback
 
 ## ER Diagram of the database.
+
 ![ER Diagram](<Images/ER Diagram.jpg>)
 
 ## Created Forms
-List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
+
+List of the forms 
 
 - Form 1 (Jathun Arachchige Darshana): Customer Loyalty Registration
 
-      : Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+        Related codes: 
+
+        Link to the feature:
+
 - Form 2 (Walpita Gamage Thanuja): Ride booking system
 
-       : Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+        Related codes: 
+
+        Link to the feature:
+
 - Form 3 (Thommaya Hakuru Shalika): Driver Registration
 
-       : Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+       Related codes: 
+
+        Link to the feature:
+
 - Form 4 (Puwakdandawa Guruge Amila): Customer feedback submission
 
-        : Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+        Related codes: 
+
+        Link to the feature:
+
 - Form 5 : Mobile app integration
 
-        : Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied                  
+        Related codes: 
+
+        Link to the feature:              
 
 ## Created Tables
 
