@@ -68,13 +68,14 @@ if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
             </div>
         </form>
         
-        <div class="popup" id="popup"> 
-            <img src="Images/thic.png" alt="tick">
-            <h3>Thank you!</h3>
-            <p class="tickbox">Your details has been successfully submitted.</p>
-            <button class="btn btn-primary" type="button" onclick="closePopup()">Ok</button>
-        </div>
-    </div>
+        <!-- Add this right after your form -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup"> 
+    <img src="Images/thic.png" alt="tick">
+    <h3>Thank you!</h3>
+    <p class="tickbox">Your details has been successfully submitted.</p>
+    <button type="button" onclick="closePopup()">Ok</button>
+</div>    </div>
 </div> 
                         <h3 class="mb-3">Scan the QR Now!</h3>
                         <img src="Images/QR.jpg" alt="QR Code" class="qr-code mb-4">
@@ -132,22 +133,23 @@ if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+function openPopup() {
+    document.getElementById("popup").classList.add("open-popup");
+    document.getElementById("overlay").classList.add("active");
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
 function closePopup() {
-    let popup = document.getElementById("popup");
-    popup.classList.remove("open-popup");
-    
-    // Clear form inputs after closing popup
-    let form = document.getElementById('riderForm');
-    let inputs = form.querySelectorAll('input[type="text"], input[type="tel"]');
-    inputs.forEach(input => {
-        // Don't clear the name and mobile if they come from cookies
-        if (input.name !== 'name' && input.name !== 'mobile') {
-            input.value = '';
-        }
-    });
+    document.getElementById("popup").classList.remove("open-popup");
+    document.getElementById("overlay").classList.remove("active");
+    document.body.style.overflow = 'auto'; // Restore scrolling
+    // Optionally reset form
+    document.getElementById("riderForm").reset();
 }
 
 document.getElementById('riderForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    
     let inputs = document.querySelectorAll('.form input[required]');
     let allFilled = true;
 
@@ -160,21 +162,33 @@ document.getElementById('riderForm').addEventListener('submit', function(event) 
         }
     });
 
-    if (!allFilled) {
-        event.preventDefault();
-    } else {
-        // Show popup after successful submission
-        setTimeout(() => {
-            let popup = document.getElementById("popup");
-            popup.classList.add("open-popup");
-            
-            // Clear only location fields immediately after submission
-            let form = document.getElementById('riderForm');
-            let locationInputs = form.querySelectorAll('input[name="startlocation"], input[name="endlocation"]');
-            locationInputs.forEach(input => {
-                input.value = '';
-            });
-        }, 500);
+    if (allFilled) {
+        // Submit form using AJAX
+        fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this)
+        })
+        .then(response => {
+            if (response.ok) {
+                openPopup(); // Show popup on successful submission
+            } else {
+                alert('Something went wrong. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Something went wrong. Please try again.');
+        });
+    }
+});
+
+// Close popup when clicking overlay
+document.getElementById('overlay').addEventListener('click', closePopup);
+
+// Close popup with ESC key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && document.getElementById('popup').classList.contains('open-popup')) {
+        closePopup();
     }
 });
 </script>
