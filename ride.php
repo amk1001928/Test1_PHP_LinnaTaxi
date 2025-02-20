@@ -41,7 +41,7 @@ if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
     
 
 
-        <!-- First Frame Section -->
+<!-- First Frame Section -->
     <section class="details">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -68,19 +68,18 @@ if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
             </div>
         </form>
         
-        <!-- Add this right after your form -->
-<div class="overlay" id="overlay"></div>
-<div class="popup" id="popup"> 
+    
+        <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup"> 
     <img src="Images/thic.png" alt="tick">
     <h3>Thank you!</h3>
     <p class="tickbox">Your details has been successfully submitted.</p>
     <button type="button" onclick="closePopup()">Ok</button>
-</div>    </div>
-</div> 
-                        <h3 class="mb-3">Scan the QR Now!</h3>
-                        <img src="Images/QR.jpg" alt="QR Code" class="qr-code mb-4">
-                        
-                        <h3 class="mb-3">Download Our App Now!</h3>
+            </div>    </div>
+        </div> 
+        <h3 class="mb-3">Scan the QR Now!</h3>
+            <img src="Images/QR.jpg" alt="QR Code" class="qr-code mb-4">
+                    <h3 class="mb-3">Download Our App Now!</h3>
                         <div class="downloads">
                             <a href="https://play.google.com/store/games">
                                 <img src="Images/GooglePlay.png" alt="Google Play">
