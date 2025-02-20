@@ -42,48 +42,47 @@ body {
 }
 
 input:focus,
-  input:not(:placeholder-shown) {
+    input:not(:placeholder-shown) {
     color: black;
-  }
-  
+}
+    
 input{
     position: relative;
-      height: auto;
-      width: 80%;
-      font-size: 1rem;
-      color: #707070;
-      margin-top: 5px;
-      outline: none;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      padding: 10px 15px;
-      background:white ;
-      
-      box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
-    }
+        height: auto;
+        width: 80%;
+        font-size: 1rem;
+        color: #707070;
+        margin-top: 5px;
+        outline: none;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 10px 15px;
+        background:white ;
+        box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
+}
     
-    select {
-      position: relative;
-      height: auto;
-      width: 200%;
-      font-size: 1rem;
-      color:  #707070;
-      margin-top: 5px;
-      outline: none;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      padding: 10px 15px;
-      background:white ;
-      box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
-    }
-  
-    select:not([value=""]) {
-      color: #000000; 
-      
-    }
-    select:([value=""]) {
-      color:  #707070;
-    }
+select {
+    position: relative;
+    height: auto;
+    width: 200%;
+    font-size: 1rem;
+    color:  #707070;
+    margin-top: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background:white ;
+    box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
+}
+
+select:not([value=""]) {
+    color: #000000; 
+}
+
+select:([value=""]) {
+    color:  #707070;
+}
 
 .btn{ 
     height: auto;
@@ -102,7 +101,9 @@ input{
     border-radius: 3px;
     box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
 }
-/* Update your existing popup CSS */
+
+/* Update existing popup CSS */
+
 .popup {
     width: 400px;
     background: #fff;
