@@ -59,15 +59,15 @@ Ride booking system is a taxi reservation system for the customers. In here, sys
 
         Related codes: 
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.php
+https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.php
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/ride.css
+https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/ride.css
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataride.php
+https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataride.php
 
         Link to the feature:
 
-        https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
+https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
 
 
 Feature 03 : Driver Registration
