@@ -37,13 +37,13 @@ Customer Loyalty Registration is for registering to the customers by using a for
 
     https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.php
 
-    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.css
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/index.css
 
-    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/dataloyalty.php
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataloyalty.php
 
     https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
 
-    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.css
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/loyaltyregistration.css
 
     Link to the feature: 
     
@@ -59,9 +59,9 @@ Ride booking system is a taxi reservation system for the customers. In here, sys
 
     https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.php
 
-    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.css
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/ride.css
 
-    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/dataride.php
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataride.php
 
     Link to the feature:
 
@@ -76,9 +76,9 @@ Driver Registration is for Drivers. In this feature, it offers the opportunity t
 
     https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.php
 
-    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.css
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/drive.css
 
-    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/data_drive.php
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/data_drive.php
 
     Link to the feature:
 
@@ -90,7 +90,17 @@ Customer feedback submission is for submit the customer's view of the quality an
 
     Related codes: 
 
-    Link to the feature: https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/aboutus.php
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/aboutus.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/aboutus.css
+    
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/feedback.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/datafeedback.php
+
+    Link to the feature: 
+    
+    https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/aboutus.php
 
     https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/feedback.php
 
@@ -103,7 +113,27 @@ username :   and password:   for access the admin dash board page.
 
     Related codes: 
 
-    Link to the feature:
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dashboard.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/login.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/update_driver.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/update_feedback.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/update_loyalty.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/update_ride.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/view_drivers.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/view_feedback.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/view_loyalty.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/view_ride.php
+
+    Link to the feature: 
 
 
 ## Database Tables
@@ -129,13 +159,13 @@ List of the forms
 
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.php
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.css
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/index.css
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/dataloyalty.php
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataloyalty.php
 
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.css
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/loyaltyregistration.css
 
         Link to the feature: 
         
@@ -149,9 +179,9 @@ List of the forms
 
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.php
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.css
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/ride.css
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/dataride.php
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataride.php
 
 
         Link to the feature:
@@ -162,11 +192,11 @@ List of the forms
 
        Related codes: 
 
-       https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.php
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.php
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.css
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/drive.css
 
-        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/data_drive.php
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/data_drive.php
 
 
         Link to the feature:
