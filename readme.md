@@ -25,10 +25,8 @@ Through this integrated approach, the LinnaTaxi Website serves as a central hub 
  - [x] Feature 02 (Walpita Gamage Thanuja) : Ride booking system
  - [x] Feature 03 (Thommaya Hakuru Shalika) : Driver Registration 
  - [x] Feature 04 (Puwakdandawa Guruge Amila) : Customer feedback submission
- - [x] Feature 05 : Mobile app integration
-
- - Ask with others any other features
-
+ - [x] Feature 05 (Jathun Arachchige Darshana): Admin Dashboard
+ 
 <br/>
 
 Feature 01 : Customer Loyalty Registration
@@ -55,7 +53,7 @@ Customer Loyalty Registration is for registering to the customers by using a for
 
 Feature 02 : Ride booking system
 
-Ride booking system is a taxi reservation system for the customers. In here, system requires the name, start and end locations of the customers and the mobile number. After filling the fields, customer have a facility to view what they feed, edit the details or delete the complete entry. All the data saved successfully in the table named "ride" in the database.
+Ride booking system is a taxi reservation system for the customers. In here, system requires the name, start and end locations of the customers and the mobile number. After submitting the form, the used name and mobile fields are auto fill by using cookies and can used again for book another ride for a specific time (1 hour). All the data saved successfully in the table named "ride" in the database.
 
     Related codes: 
 
@@ -97,9 +95,11 @@ Customer feedback submission is for submit the customer's view of the quality an
     https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/feedback.php
 
 
-Feature 05 : Mobile app integration
+Feature 05 : Admin Dashboard
 
-Mobile app integration is placed in all the three pages of index, ride and drive. Instead of the web page of LinnaTaxi, this feature is for download the mobile app by using the playstores of service providers and scan the QR code.
+In this web page, there has an admin dash board attached to index.php for only the back end administration staff. They can view, update or delete the relevant data if necessary.
+
+username :   and password:   for access the admin dash board page.
 
     Related codes: 
 
@@ -234,6 +234,6 @@ List of the tables created in the project work
 ## Team Members
 
 - Jathun Arachchige Darshana
-- Puwakdandawa Guruge Amila
-- Thommaya Hakuru Shalika
 - Walpita Gamage Thanuja
+- Thommaya Hakuru Shalika
+- Puwakdandawa Guruge Amila
