@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    padding-top: 80px; 
+    padding-top: 90px; 
 }
 
 .h2{
@@ -17,7 +17,7 @@ body {
     background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%);
     color:black; 
     padding-left:  5rem; 
-    padding-top: 0.5rem;
+    padding-top: 0.1rem;
     padding-right: 5rem;
     padding-bottom: 1rem;
 }
