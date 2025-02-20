@@ -287,12 +287,8 @@ List of the forms
 
 
         Validations applied:
-
-        - Required field validation
         
         - Input type validation 
-
-        - Input name validation
 
         - Server-side PHP validation
 
