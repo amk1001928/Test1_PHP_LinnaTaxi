@@ -23,6 +23,7 @@
 <!-- Include Header -->
 <?php include 'header.php'; ?> 
 
+<!-- first frame - left column -->
 <div class="first-frame">
   <div class="container">
     <div class="row min-vh-100">
@@ -38,7 +39,7 @@
     </button>
       </div>
 
-
+<!-- first frame - right column -->
       <div class="col-lg-5">
         <div class="image-stack">
           <img src="Images/HomeFrame1.png" alt="Illustration of Linna Taxi service" class="img-fluid" />
@@ -48,12 +49,15 @@
   </div>
 </div>
 
+<!-- second frame - left column -->
 <div class="second-frame">
   <div class="container">
     <div class="row align-items-center min-vh-100">
       <div class="col-lg-6 text-center mb-4 mb-lg-0">
         <img src="Images/PhoneMap.jpg" alt="LinnaTaxi app interface on phone" class="img-fluid app-mockup" />
       </div>
+
+<!-- second frame - right column -->
       <div class="col-lg-6">
         <h2 class="mb-4">Your LinnaTaxi App: How It Works</h2>
         <ul class="custom-list">

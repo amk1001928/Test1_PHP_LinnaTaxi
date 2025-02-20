@@ -51,7 +51,7 @@ $result = $connect->query($sql);
             <tbody>
                 <?php while($row = $result->fetch_assoc()): ?>
                 <tr>
-                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['rideid']; ?></td>
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['startlocation']; ?></td>
                     <td><?php echo $row['endlocation']; ?></td>
