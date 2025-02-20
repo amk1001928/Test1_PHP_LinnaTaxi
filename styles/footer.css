@@ -51,6 +51,17 @@
     text-align: right;
     margin-right: auto;
 }
+.login-link {
+    color: #e0d207;  /* or any color that matches your footer theme */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #ccc;  /* slightly lighter color on hover */
+    text-decoration: underline;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
