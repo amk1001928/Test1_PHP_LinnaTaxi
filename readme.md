@@ -53,6 +53,8 @@ Customer Loyalty Registration is for registering to the customers by using a for
 
 Feature 02 : Ride booking system
 
+https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.php
+
 Ride booking system is a taxi reservation system for the customers. In here, system requires the name, start and end locations of the customers and the mobile number. After submitting the form, the used name and mobile fields are auto fill by using cookies and can used again for book another ride for a specific time (1 hour). All the data saved successfully in the table named "ride" in the database.
 
         Related codes: 
