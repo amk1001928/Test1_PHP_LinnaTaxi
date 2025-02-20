@@ -287,6 +287,8 @@ https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/feedback.php
 
 
         Validations applied:
+
+        - Required field validation
         
         - Input type validation 
 

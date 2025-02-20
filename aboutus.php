@@ -59,7 +59,7 @@
                         <li>Continuous Improvement</li>
                         <li> Local Expertise: We know Hämeenlinna like the back of our hand, ensuring efficient routes and excellent service.</li>
                     </ul>
-                    <p>Thank you for choosing LinnaTaxi. Your destination is our priority!<strong> <a href="feedback.php">We value your feedback!</a></strong> </p>   
+                    <p>Thank you for choosing LinnaTaxi. Your destination is our priority!<strong> <a href="feedback.php">We value your feedback! </a></strong> </p>   
 
 
                 </div>
