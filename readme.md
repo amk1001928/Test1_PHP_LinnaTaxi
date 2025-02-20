@@ -167,11 +167,32 @@ List of the forms
 
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/loyaltyregistration.css
 
+
         Link to the feature: 
         
         https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/index.php
 
         https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/loyaltyregistration.php
+
+
+        Validations applied:
+
+        - Required field validation
+        
+        - Input type validation 
+
+        - Manual field validation
+
+        - Event prevention 
+
+        - Popup feedback
+
+        - Form field type validation
+
+        - Password field
+
+        - Redirection validation
+
 
 - Form 2 (Walpita Gamage Thanuja): Ride booking system
 
@@ -188,6 +209,25 @@ List of the forms
 
         https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
 
+
+        Validations applied:
+
+        - Required field validation
+        
+        - Input type validation 
+
+        - Manual field validation
+
+        - Prevent default submission
+
+        - Feedback validation
+
+        - Prefill inputs
+
+        - Session management
+
+        - Dynamic validation
+
 - Form 3 (Thommaya Hakuru Shalika): Driver Registration
 
        Related codes: 
@@ -203,6 +243,21 @@ List of the forms
 
         https://shell.hamk.fi/~amk1003219/Test1_PHP_LinnaTaxi/drive.php
 
+
+        Validations applied:
+
+        - Required field validation
+        
+        - Input type validation 
+
+        - Dropdown validation
+
+        - Form submission control
+
+        - Popup confirmation
+
+        - Keyboard and overlay events
+
 - Form 4 (Puwakdandawa Guruge Amila): Customer feedback submission
 
         Related codes: 
@@ -215,11 +270,25 @@ List of the forms
 
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/datafeedback.php
 
+
         Link to the feature: 
         
         https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/aboutus.php
 
         https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/feedback.php
+
+
+        Validations applied:
+
+        - Required field validation
+        
+        - Input type validation 
+
+        - Input name validation
+
+        - Server-side PHP validation
+
+        - Java script validation
 
 - Form 5 (Jathun Arachchige Darshana): Admin Dashboard 
 
@@ -256,9 +325,14 @@ List of the tables created in the project work
 
         Related codes: 
 
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataloyalty.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/loyaltyregistration.css
+
+
         Link to the feature: 
-        
-        https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/index.php
 
         https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/loyaltyregistration.php
 
@@ -266,15 +340,27 @@ List of the tables created in the project work
 
         Related codes: 
 
-        https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_amk1001929&table=ride
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/ride.css
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataride.php
 
         Link to the feature:
 
         https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
 
+        https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_amk1001929&table=ride
+
 - Table 3 (Thommaya Hakuru Shalika) : drivers
 
         Related codes: 
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/drive.css
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/data_drive.php
 
         Link to the feature:
 
@@ -284,13 +370,14 @@ List of the tables created in the project work
 
         Related codes: 
 
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/feedback.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/datafeedback.php
+
         Link to the feature: 
-        
-        https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/aboutus.php
 
         https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/feedback.php
 
-- Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
 ## Team Members
 
