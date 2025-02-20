@@ -369,6 +369,8 @@ List of the tables created in the project work
 - Table 4 (Puwakdandawa Guruge Amila) : feedback
 
         Related codes: 
+        
+        https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_amk1002436&table=feedback
 
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/feedback.php
 
