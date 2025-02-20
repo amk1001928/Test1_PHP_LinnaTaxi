@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    padding-top: 80px; 
+}
+
+.h2{
+
+    padding-left: 300px; 
+}
+
+
+/* First Frame */
+.first-frame {
+    height: 100vh;
+    background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%);
+    color:black; 
+    padding-left:  5rem; 
+    padding-top: 0.5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+
+/*second Frame */
+.second-frame {
+    height: 100vh; 
+    background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); 
+    color:black;
+    padding-left:  7rem;
+    padding-top: 1rem;
+    padding-right: 7rem;
+    padding-bottom: 7rem;
+}
+
+/* Image Styles */
+.CEO_Img
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 130px;
+    height: auto;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.HR_IMG
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: auto;
+}
+
+.IT_IMG
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: auto;
+}
+
+.OPS_IMG 
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+/* adding hover to the images */
+
+.CEO_Img:hover  {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.IT_IMG:hover  {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+.OPS_IMG:hover  {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.HR_IMG:hover  {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Card Styles for background */
+.card-body {
+background-color: #f6d028;
+
+}
+
+/* Caption Styles */
+.caption1, .caption2, .caption3, .caption4
+{
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0.5rem;
+}
+
+/* span Styles */
+.span1, .span2, .span3, .span4
+{
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .nav {
+        margin-top: 1rem;
+    }
+    
+    .menu-button {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .logo img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 0;
+    }
+    
+    .nav .d-flex {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    
+    .menu-button {
+        margin: 0.5rem;
+    }
+    
+    .first-frame,
+    .second-frame {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 120px;
+    }
+    
+    .logo {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .menu-button {
+        width: 100%;
+        text-align: center;
+        margin: 0.25rem 0;
+    }
+}
+
+
+/*images for feedback sheet*/
+.smile
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: auto;
+    
+
+}
+
+.sad
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: auto;
+}
+
+
+.medium
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: auto;
+    
+}
+
+.col-12
+{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.feedback
+{
+    
+    width: 500px;
+    height: auto;
+
+    
+}
+
+.btn
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width:100px;
+    height: auto;
+    border: #0e0e0e;
+
+    
+}

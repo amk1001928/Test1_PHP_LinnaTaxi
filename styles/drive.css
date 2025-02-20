@@ -1,0 +1,345 @@
+/* Base styles */
+body {
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Frame styles */
+.first-frame,
+.second-frame {
+  min-height: 100vh;
+  background-color: #FDD31A;
+  width: 100%;
+}
+
+/* Driver section styles */
+.driver-column {
+  margin-top: 90px;
+  height: 100vh;
+  padding: 0;
+}
+
+.driver {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.driver img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Form section styles */
+.form-column {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #FDD31A;
+  padding: 40px;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.signup {
+  margin-top: 90px;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.form {
+  margin-left: 55px;
+  width: 80%;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-control,
+.form-select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Download section styles */
+.download-section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+  gap: 30px;
+}
+
+.app-image-container {
+  flex: 1;
+  max-width: 60%;
+}
+
+.download-app {
+  margin-right: 0px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.download-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.download-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 20px;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+
+.download-buttons img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+
+}
+
+.download-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* Description section styles */
+.description {
+  background-color: #333;
+  padding: 140px;
+}
+
+.description h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f5f1f1;
+  margin-bottom: 30px;
+}
+
+.description .last {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.description li {
+  color: #ddd;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 2;
+}
+
+.description li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #e8e409;
+}
+
+/* Popup styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 30px;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.popup.show, .overlay.show {
+  display: block;
+}
+
+.popup img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.popup h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #ffdd49;
+  color: #333;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .download-section {
+    padding: 30px;
+  }
+
+  .download-buttons img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .driver-column {
+    height: 50vh;
+  }
+
+  .form-column {
+    height: auto;
+    min-height: 50vh;
+    padding: 20px;
+  }
+
+  .signup {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .download-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .app-image-container {
+    max-width: 100%;
+  }
+
+  .download-text {
+    font-size: 1.75rem;
+  }
+
+  .download-buttons img {
+    width: 150px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .description h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup {
+    font-size: 1.75rem;
+  }
+
+  .download-buttons img {
+    width: 130px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .description ul {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-column {
+    padding: 15px;
+  }
+
+  .signup {
+    font-size: 1.5rem;
+  }
+
+  .form-control,
+  .form-select {
+    padding: 10px;
+  }
+
+  .download-section {
+    padding: 15px;
+  }
+
+  .download-text {
+    font-size: 1.5rem;
+  }
+
+  .download-buttons img {
+    width: 120px;
+  }
+
+  .description h2 {
+    font-size: 1.5rem;
+  }
+
+  .description .last {
+    font-size: 1rem;
+  }
+
+  .popup {
+    padding: 20px;
+  }
+}
