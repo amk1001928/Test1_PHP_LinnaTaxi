@@ -34,15 +34,15 @@ Feature 01 : Customer Loyalty Registration
 Customer Loyalty Registration is for registering to the customers by using a form as a regular customers of LinnaTaxi service.The index page is linked to Customer Loyalty Registration form and After fill the fields of customer's name, mobile number etc., there has the option to Register in the LinnaTaxi service. In here, database used for collect and store the details of registered customers.
     
         Related codes: 
-
+        
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.php
-
+        
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/index.css
-
+        
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataloyalty.php
-
+        
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
-
+        
         https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/loyaltyregistration.css
 
         Link to the feature: 
