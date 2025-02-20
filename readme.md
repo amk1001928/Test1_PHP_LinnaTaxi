@@ -148,7 +148,7 @@ https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/crud/view_loyalty.php
 
 List of the database tables of the project.
 
-- Table 1 (Jathun Arachchige Darshana) : loyalty
+- Table 1 (Jathun Arachchige Darshana) : loyalty_customers
 - Table 2 (Walpita Gamage Thanuja) : ride 
 - Table 3 (Thommaya Hakuru Shalika) : drivers
 - Table 4 (Puwakdandawa Guruge Amila) : feedback
@@ -337,7 +337,7 @@ https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/crud/view_loyalty.php
 
 List of the tables created in the project work
 
-- Table 1 (Jathun Arachchige Darshana) : loyalty
+- Table 1 (Jathun Arachchige Darshana) : loyalty_customers
 
         Related codes: 
 
