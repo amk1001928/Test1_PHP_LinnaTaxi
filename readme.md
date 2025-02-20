@@ -37,6 +37,16 @@ Customer Loyalty Registration is for registering to the customers by using a for
     
     Related codes: 
 
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.css
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/dataloyalty.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.css
+
     Link to the feature: 
     
     https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/index.php
@@ -49,6 +59,12 @@ Ride booking system is a taxi reservation system for the customers. In here, sys
 
     Related codes: 
 
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.css
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/dataride.php
+
     Link to the feature:
 
     https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
@@ -59,6 +75,12 @@ Feature 03 : Driver Registration
 Driver Registration is for Drivers. In this feature, it offers the opportunity to register a person as a driver at LinnaTaxi service and the registered drivers get the chance to earn as a taxi driver. This form has some selection fields to fill such as working district, available time slots so on. Data stored at the table "drivers" in the data base.
 
     Related codes: 
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.php
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.css
+
+    https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/data_drive.php
 
     Link to the feature:
 
@@ -105,6 +127,16 @@ List of the forms
 
         Related codes: 
 
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.css
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/dataloyalty.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.css
+
         Link to the feature: 
         
         https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/index.php
@@ -115,6 +147,13 @@ List of the forms
 
         Related codes: 
 
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.css
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/dataride.php
+
+
         Link to the feature:
 
         https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
@@ -122,6 +161,13 @@ List of the forms
 - Form 3 (Thommaya Hakuru Shalika): Driver Registration
 
        Related codes: 
+
+       https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.php
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.css
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/data_drive.php
+
 
         Link to the feature:
 
