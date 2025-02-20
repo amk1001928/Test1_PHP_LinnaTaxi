@@ -360,6 +360,13 @@ List of the tables created in the project work
         
         https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_amk1001928&table=loyalty_customers
 
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataloyalty.php
+        
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
+        
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/loyaltyregistration.css
+
+        
         Link to the feature: 
         
         https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/loyaltyregistration.php
@@ -369,6 +376,12 @@ List of the tables created in the project work
         Related codes: 
         
         https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_amk1001929&table=ride
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/ride.php
+        
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/ride.css
+        
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataride.php
    
         Link to the feature:
         
@@ -382,6 +395,14 @@ List of the tables created in the project work
         
         https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_amk1003219&table=drivers
 
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/drive.php
+        
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/drive.css
+        
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/data_drive.php
+
+        
+
         Link to the feature:
         
         https://shell.hamk.fi/~amk1003219/Test1_PHP_LinnaTaxi/drive.php
@@ -391,6 +412,10 @@ List of the tables created in the project work
         Related codes: 
         
         https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_amk1002436&table=feedback
+
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/feedback.php
+        
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/datafeedback.php
 
         Link to the feature: 
         
