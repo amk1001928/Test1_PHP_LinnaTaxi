@@ -126,12 +126,13 @@ include 'db_connect.php'; // Include database connection
     <?php include 'footer.php'; ?>
 
     <script>
+      //display the popup and overlay
 function showPopup() {
     document.getElementById('popup').classList.add('show');
     document.getElementById('overlay').classList.add('show');
     document.body.style.overflow = 'hidden';
 }
-
+//hide the popup and overlay
 function closePopup() {
     document.getElementById('popup').classList.remove('show');
     document.getElementById('overlay').classList.remove('show');
