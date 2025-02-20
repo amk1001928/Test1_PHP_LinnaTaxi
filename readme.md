@@ -37,7 +37,11 @@ Customer Loyalty Registration is for registering to the customers by using a for
     
     Related codes: 
 
-    Link to the feature:
+    Link to the feature: 
+    
+    https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/index.php
+
+    https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/loyaltyregistration.php
 
 Feature 02 : Ride booking system
 
@@ -46,6 +50,8 @@ Ride booking system is a taxi reservation system for the customers. In here, sys
     Related codes: 
 
     Link to the feature:
+
+    https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
 
 
 Feature 03 : Driver Registration
@@ -56,13 +62,17 @@ Driver Registration is for Drivers. In this feature, it offers the opportunity t
 
     Link to the feature:
 
+    https://shell.hamk.fi/~amk1003219/Test1_PHP_LinnaTaxi/drive.php
+
 Feature 04 : Customer feedback submission
 
 Customer feedback submission is for submit the customer's view of the quality and experience of the LinnaTaxi service."about us" page is linked to "feedback" page. In here, collected feedback is stored in "feedback" table in the data base.
 
     Related codes: 
 
-    Link to the feature:
+    Link to the feature: https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/aboutus.php
+
+    https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/feedback.php
 
 
 Feature 05 : Mobile app integration
@@ -95,7 +105,11 @@ List of the forms
 
         Related codes: 
 
-        Link to the feature:
+        Link to the feature: 
+        
+        https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/index.php
+
+        https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/loyaltyregistration.php
 
 - Form 2 (Walpita Gamage Thanuja): Ride booking system
 
@@ -103,17 +117,25 @@ List of the forms
 
         Link to the feature:
 
+        https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
+
 - Form 3 (Thommaya Hakuru Shalika): Driver Registration
 
        Related codes: 
 
         Link to the feature:
 
+        https://shell.hamk.fi/~amk1003219/Test1_PHP_LinnaTaxi/drive.php
+
 - Form 4 (Puwakdandawa Guruge Amila): Customer feedback submission
 
         Related codes: 
 
-        Link to the feature:
+        Link to the feature: 
+        
+        https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/aboutus.php
+
+        https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/feedback.php
 
 - Form 5 : Mobile app integration
 
@@ -129,7 +151,11 @@ List of the tables created in the project work
 
         Related codes: 
 
-        Link to the feature:
+        Link to the feature: 
+        
+        https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/index.php
+
+        https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/loyaltyregistration.php
 
 - Table 2 (Walpita Gamage Thanuja) : ride
 
@@ -137,17 +163,25 @@ List of the tables created in the project work
 
         Link to the feature:
 
+        https://shell.hamk.fi/~amk1001929/Test1_PHP_LinnaTaxi/ride.php
+
 - Table 3 (Thommaya Hakuru Shalika) : drivers
 
         Related codes: 
 
         Link to the feature:
 
+        https://shell.hamk.fi/~amk1003219/Test1_PHP_LinnaTaxi/drive.php
+
 - Table 4 (Puwakdandawa Guruge Amila) : feedback
 
         Related codes: 
 
-        Link to the feature:
+        Link to the feature: 
+        
+        https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/aboutus.php
+
+        https://shell.hamk.fi/~amk1002436/Test1_PHP_LinnaTaxi/feedback.php
 
 - Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
