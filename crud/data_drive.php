@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php'; // Include database connection
+include '../db_connect.php'; // Include database connection
 
     // Escape user inputs to prevent SQL injection
     $firstName = $_POST['firstName'];
@@ -17,7 +17,7 @@ include 'db_connect.php'; // Include database connection
     VALUES ('$firstName', '$lastName', '$email', '$mobile', '$vehicleType', '$vehicleMake', '$vehicleModel', '$availability', '$workingDistrict')";
 
     if ($connect->query($sql) === TRUE) {
-        header("Location: drive.php?register=success"); // Redirect on successful registation 
+        header("Location: ../drive.php?register=success"); // Redirect on successful registation 
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $connect->error;

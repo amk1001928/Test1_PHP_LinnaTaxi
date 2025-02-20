@@ -28,7 +28,7 @@ if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="ride.css">
+    <link rel="stylesheet" href="styles/ride.css">
 
 </head>
 
@@ -50,7 +50,7 @@ if(isset($_GET['signup']) && $_GET['signup'] == 'success') {
                 <div class="calling">
     <h3 class="mb-4">Apply for your ride now!</h3>
     <div class="application">
-        <form action="dataride.php" class="form" method="post" id="riderForm">
+        <form action="crud/dataride.php" class="form" method="post" id="riderForm">
             <div class="input-box">
                 <input type="text" class="form-control" name="name" 
                     value="<?php echo isset($_COOKIE['user_name']) ? htmlspecialchars($_COOKIE['user_name']) : ''; ?>" 

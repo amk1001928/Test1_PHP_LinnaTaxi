@@ -1,6 +1,6 @@
 
 <?php
-include 'db_connect.php'; // Include database connection
+include '../db_connect.php'; // Include database connection
 
     // Escape user inputs to prevent SQL injection
     $driver = $_POST["driver_Performance"];
@@ -14,7 +14,7 @@ include 'db_connect.php'; // Include database connection
             VALUES ('$driver', '$vehicle', '$timeline', '$process', '$overall')";
 
     if ($connect->query($sql) === TRUE) {
-        header("Location: aboutus.php?signup=success"); 
+        header("Location: ../aboutus.php?signup=success"); 
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $connect->error;

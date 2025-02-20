@@ -14,7 +14,7 @@ include 'db_connect.php'; // Include database connection
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="loyaltyregistration.css" />
+  <link rel="stylesheet" href="styles/loyaltyregistration.css" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +27,7 @@ include 'db_connect.php'; // Include database connection
 
 <div class="container">
   <h1>LinnaTaxi<br>Customer Loyalty Registration</h1>
-  <form id="registerForm" action="dataloyalty.php" method="post">
+  <form id="registerForm" action="crud/dataloyalty.php" method="post">
         <input type="text" name="firstName" placeholder="First Name" required><br>
         <input type="text" name="lastName" placeholder="Last Name" required><br>
         <input type="text" name="phoneNo" placeholder="Phone No" required><br>

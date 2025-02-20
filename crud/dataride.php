@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db_connect.php'; // Include database connection
+include '../db_connect.php'; // Include database connection
 
 // Store form data in session
 $_SESSION['user_name'] = $_POST['name'];
@@ -26,7 +26,7 @@ $_SESSION['form_data'] = [
 if ($connect->query($sql) === TRUE) {
     // Clear form data from session after successful submission
     unset($_SESSION['form_data']);
-    header("Location: ride.php?signup=success"); // Redirect on successful apply
+    header("Location: ../ride.php?signup=success"); // Redirect on successful apply
     exit();
 } else {
     echo "Error: " . $sql . "<br>" . $connect->error;

@@ -7,7 +7,7 @@ include 'db_connect.php'; // Include database connection
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="drive.css" />
+    <link rel="stylesheet" href="styles/drive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" />
@@ -35,7 +35,7 @@ include 'db_connect.php'; // Include database connection
           <div class="col-lg-6 form-column">
             <div class="form-wrapper">
               <h1 class="signup">Signup to Drive LinnaTaxi</h1>
-              <form action="data_drive.php" class="form" method="post" id="driverForm">
+              <form action="crud/data_drive.php" class="form" method="post" id="driverForm">
     <div class="input-box">
         <input type="text" class="form-control" name="firstName" placeholder="First name" required>
         <input type="text" class="form-control" name="lastName" placeholder="Last name" required>

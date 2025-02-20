@@ -11,7 +11,7 @@ body {
 /* details Section */
 .details {
     min-height: 100vh;
-    background-image: url('Images/RideBack1.png');
+    background-image: url('../Images/RideBack1.png');
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
@@ -199,7 +199,7 @@ input{
 /* Benefits Section */
 .benefits-section {
     min-height: 100vh;
-    background-image: url('Images/RideBack2.png');
+    background-image: url('../Images/RideBack2.png');
     background-size: cover;
     background-position: center;
     padding: 1rem 0;

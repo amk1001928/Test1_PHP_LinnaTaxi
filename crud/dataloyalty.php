@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php'; // Include database connection
+include '../db_connect.php'; // Include database connection
 
     // Escape user inputs to prevent SQL injection
     $firstName = $_POST["firstName"];
@@ -13,7 +13,7 @@ include 'db_connect.php'; // Include database connection
             VALUES ('$firstName', '$lastName', '$phoneNo', '$email', '$password')";
 
     if ($connect->query($sql) === TRUE) {
-        header("Location: index.php?signup=success"); // Redirect on successful signup
+        header("Location: ../index.php?signup=success"); // Redirect on successful signup
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $connect->error;

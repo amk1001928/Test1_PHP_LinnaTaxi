@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="styles/aboutus.css">
 </head>
 
 <body>

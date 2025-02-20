@@ -19,7 +19,7 @@ include 'db_connect.php'; // Include database connection
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="aboutus.css">
+        <link rel="stylesheet" href="styles/aboutus.css">
 </head>
 
 <body>
@@ -33,7 +33,7 @@ include 'db_connect.php'; // Include database connection
                         <div class="col-7">
                             <h2>How is your Ride......</h2>
                             <br>
-                                <form method="POST" action="datafeedback.php">
+                                <form method="POST" action="crud/datafeedback.php">
                                     <label for="driver-Performance">How would you rate the professionalism and behavior of your driver?</label>
                                     <br>
                                     <img src="Images/smile.png.jpg" class="smile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

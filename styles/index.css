@@ -80,7 +80,7 @@ body {
 
 /* Second Frame Styles */
 .second-frame {
-    background-image: url('Images/HomeFrame2Back.png');
+    background-image: url('../Images/HomeFrame2Back.png');
     background-size: cover;
     background-position: center;
     color: black;
