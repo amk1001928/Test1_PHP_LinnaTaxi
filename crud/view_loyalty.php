@@ -26,7 +26,7 @@ $result = $connect->query($sql);
     <div class="container mt-5">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>Loyalty Members List</h2>
-            <a href="index.php" class="btn btn-secondary">Back to Dashboard</a>
+            <a href="dashboard.php" class="btn btn-secondary">Back to Dashboard</a>
         </div>
 
         <?php if (isset($_GET['msg']) && $_GET['msg'] == 'updated'): ?>
