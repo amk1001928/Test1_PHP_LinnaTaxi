@@ -35,15 +35,15 @@ Customer Loyalty Registration is for registering to the customers by using a for
     
         Related codes: 
 
-https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.php
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/index.php
 
-https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/index.css
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/index.css
 
-https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataloyalty.php
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/crud/dataloyalty.php
 
-https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/loyaltyregistration.php
 
-https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/loyaltyregistration.css
+        https://github.com/amk1001928/Test1_PHP_LinnaTaxi/blob/main/styles/loyaltyregistration.css
 
         Link to the feature: 
     
