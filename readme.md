@@ -337,7 +337,7 @@ https://shell.hamk.fi/~amk1001928/Test1_PHP_LinnaTaxi/crud/view_loyalty.php
 
 List of the tables created in the project work
 
-- Table 1 (Jathun Arachchige Darshana) : loyalty
+- Table 1 (Jathun Arachchige Darshana) : loyalty_customers
 
         Related codes: 
 
