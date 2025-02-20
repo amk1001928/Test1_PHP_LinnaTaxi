@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php';
+include '../db_connect.php';
 
 if (!isset($_GET['id'])) {
     header("Location: view_ride.php");

@@ -1,10 +1,5 @@
 <?php
-// If already logged in, redirect to dashboard
-if(isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
-    header("Location: dashboard.php");
-    exit();
-}
-
+session_start();
 // Default admin credentials
 $default_admin = [
     'username' => 'admin',
